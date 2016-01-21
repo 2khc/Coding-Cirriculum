@@ -7,7 +7,7 @@ A coding curriculum designed by Kelvin Chan, Farooq Dean, Fasbeer Eskander, Thom
     <h3> Short Bio of Each Member </h3>
 
     <div>
-    <h2> Kelvin Chan </h2>
+    <h4> Kelvin Chan </h4>
     <p> Slacker guy on team doing some work </p>
 
     </div>
