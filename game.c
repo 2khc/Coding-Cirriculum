@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-//#include <iostream>
 
+// A basic calculator that takes 2 inputs, and adds numbers together.
+// program terminates after operation complete.
 int basicAddition1()
 {
     int numOne;
@@ -15,10 +16,14 @@ int basicAddition1()
 
     int result = numOne + numTwo;
 
-    printf("%i + %i = %i",numOne,numTwo,result);
+    printf("%i + %i = %i", numOne, numTwo, result);
+
+    return result;
 
 }
 
+// A basic calculator that takes a single input continuously and adds it onto the previous number.
+// uses a while loop.
 double basicAddition()
 {
     // Basic Addition
@@ -26,26 +31,56 @@ double basicAddition()
     double input;
     while (scanf("%lf", &input))
     {
-//        printf("input is: %lf\n", input);
-//        printf("Sum = %lf\n", sum);
         sum += input;
         printf("Sum + input = %f\n", sum);
     }
-
+    return sum;
 }
+
+// What about a calculator with which we can choose an operation we want?
+
+int flexibleCalculator()
+{
+    //First, we declare the variables for values that we can expect to store.
+    char operation;
+    int numOne;
+    int numTwo;
+    int result;
+
+    // First we get input from the console.
+    printf("Input desired operation: ");
+    scanf("%c", &operation);
+    printf("Input first number: ");
+    scanf("%i", &numOne);
+    printf("Input second number: ");
+    scanf("%i", &numTwo);
+
+    // Now we decide how to use the operation that has been input.
+    // We will do this using an "if - else" statement.
+    if (operation == 'x' | operation == '*')
+    {
+        result = numOne * numTwo;
+    }
+    else if (operation == '+')
+    {
+        result = numOne + numTwo;
+    }
+    else if (operation == '-')
+    {
+        result = numOne - numTwo;
+    }
+    else if (operation == '/')
+    {
+        result = numOne / numTwo;
+    }
+    printf("%i %c %i = %i", numOne, operation, numTwo, result);
+}
+
 
 int main(void)
 {
-    // 1 to 3 levels in the game
-    // first level times tables
-    // learn prediodic table?
 
 
-
-    printf("Hi, welcome to a text-based game designed to help you with some interesting\nmathematical tasks");
-    printf("\nDo you want to convert numbers into different bases? I know you do.\n");
-//    printf("Here are the instructions:\n");
-
-    basicAddition1();
-
+//    basicAddition1();
+    flexibleCalculator();
 }
