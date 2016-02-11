@@ -2,7 +2,7 @@
 A coding curriculum designed by Kelvin Chan, Farooq Dean, Fasbeer Eskander, Thomas Yenbamroong
 
 ##### Table of Contents
-[Headers](#headers)
+[Welcome to C-alculator](#headers)
 <a name="Welcome to C-alculator"/>
 ## Headers
 
