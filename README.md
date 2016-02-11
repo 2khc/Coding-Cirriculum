@@ -6,7 +6,9 @@ A coding curriculum designed by Kelvin Chan, Farooq Dean, Fasbeer Eskander, Thom
 <h2>What is this all about?</h2>
 
 <p>But first let’s start from the very start. What exactly is programming? Is it the act of scheduling a television or radio program? Well yeah it is but not in the context we’re using it. Programming in general would be to provide specific instructions to a computer to do a certain task. These instructions usually take the form of an algorithm, a procedure to solve a problem or to carry out a specific task, in one of the many programming languages which are designed to communicate instructions to a machine. These may include writing an algorithm to make a robot move around in a circle, just like telling a dog to roll over.
+</p>
 
+<p>
 Now, why should we learn C programming? Firstly, C has been there for a long time! The first C programming language was written in the early 1970s by Dennis Ritchie. C is a very low level language which means the source code we have written in C is very close to machine code which is the language the CPU understands.  It is a compiled language which is faster than higher level language while learning. As its name suggests, compared to low level languages it is further from machine code and closer to English language. Furthermore, C programming language has been the basis for a lot of other higher level programming languages like Java, PHP, JavaScript, Python, C++, Objective C and a lot more. Learning the basics of C and its syntax will also help beginners learn other C based languages much more efficiently. 
 
 Well enough of this boring introduction, let’s start learning and have some fun!
