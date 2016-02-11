@@ -47,3 +47,15 @@ Below are a number of factors considered in designing and implementing our proje
   * We have made a number of different calculators that provide various functions. We want you to progress through the structured lessons and gain a solid grounding in C
   * This includes ideas like the various loops (while, if, for), variables, basic data structures, functions, libraries and so on.
   * As you progress through the lessons, you will eventually end up building a calculator just like the one provided by us, with the same functionality. This will test and consolidate what you have learnt. 
+
+##**Lesson **1: Getting started
+
+This first lesson will make sure that both you and your computer are prepared correctly to handle all the programming tasks you'll be completing as you progress through this course!
+
+Let's get started. You'll be needing a text editor. If you're looking for something with a nice and beautiful theme, we recommend [Sublime Text 3](https://www.sublimetext.com/3), if you want something
+a little more plain you can simply go for Notepad++(https://notepad-plus-plus.org/download/v6.8.8.html).
+
+The next step is to install a C **compiler onto your computer. "What is a compiler?", you ask... Well, as mentioned earlier, C is a low-level programming language meaning that the commands in C are closely related to the instructions that your **computer **processing **unit would run. **HOWEVER, this still means that the language is undirectly unreadable by the CPU, as such, you need to first compile your code
+such that it is translated into a form that your CPU can run.
+
+Download the compiler [here](http://www.mingw.org/), you can see the button for "Download Installer" at the top right corner of the page.
