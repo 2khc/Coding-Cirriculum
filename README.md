@@ -43,8 +43,8 @@ Below are a number of factors considered in designing and implementing our proje
 2. Language being taught – we are teaching the C programming language. This is because:
   * C has a large number of practical applications and can be used as a springboard for you learners to make their own projects. Other languages e.g. HTML (which isn’t strictly a programming language),generally  need supports like CSS in order to work well. C is “standalone” in that sense.
   * C provides a nice introduction to procedural programming.
-3.	STEM theme – our chosen STEM theme is mathematics. We want to teach you how to program in a mathematics context; i.e. with an end goal of making an application that helps people with mathematics.
-4.	Description of learning experience:
-•	We have made a number of different calculators that provide various functions. We want you to progress through the structured lessons and gain a solid grounding in C
-•	This includes ideas like the various loops (while, if, for), variables, basic data structures, functions, libraries and so on.
-•	As you progress through the lessons, you will eventually end up building a calculator just like the one provided by us, with the same functionality. This will test and consolidate what you have learnt. 
+3. STEM theme – our chosen STEM theme is mathematics. We want to teach you how to program in a mathematics context; i.e. with an end goal of making an application that helps people with mathematics.
+4. Description of learning experience:
+  * We have made a number of different calculators that provide various functions. We want you to progress through the structured lessons and gain a solid grounding in C
+  * This includes ideas like the various loops (while, if, for), variables, basic data structures, functions, libraries and so on.
+  * As you progress through the lessons, you will eventually end up building a calculator just like the one provided by us, with the same functionality. This will test and consolidate what you have learnt. 
