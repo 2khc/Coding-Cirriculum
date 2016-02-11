@@ -3,7 +3,7 @@ A coding curriculum designed by Kelvin Chan, Farooq Dean, Fasbeer Eskander, Thom
 
 ##### Table of Contents
 [Welcome to C-alculator](#welcome-to-c-alculator)  
-[About us]()
+[About us](#about-us)  
 [Overview](#coding-curriculum--overview-of-design-specifications)
 
 <h1>Welcome to C-alculator</h1>
@@ -19,25 +19,17 @@ Now, why should we learn C programming? Firstly, C has been there for a long tim
 Well enough of this boring introduction, let’s start learning and have some fun!
 </p>
 
-<div>
-    <h3> Short Bio of Each Member </h3>
+<h3>About Us</h3>
 
-    <div>
-    <h4>Kelvin Chan</h4>
-    <p>Slacker guy on team doing some work.</p>
+<h4>Kelvin Chan</h4>
+<p>Slacker guy on team doing some work.</p>
 
-    </div
-    <div>
-    <h4>Fasbeer</h4>
-    </div>
+<h4>Fasbeer</h4>
 
-    <div><h4>Thomas</h4></div>
 
-    <div><h4>Farooq</h4>
-    <p>I'm Farooq Dean and I'm a computer science student at UCL. I try to learn languages in my spare time and sometimes play basketball.</p>
-    </div>
-
-</div>
+<h4>Thomas</h4>
+<h4>Farooq</h4>
+<p>I'm Farooq Dean and I'm a computer science student at UCL. I try to learn languages in my spare time and sometimes play basketball.</p>
 
 
 <h2>Coding Curriculum – Overview of Design Specifications</h2>
