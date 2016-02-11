@@ -1,6 +1,11 @@
 # CodingCurriculum
 A coding curriculum designed by Kelvin Chan, Farooq Dean, Fasbeer Eskander, Thomas Yenbamroong
 
+##### Table of Contents
+[Headers](#headers)
+<a name="headers"/>
+## Headers
+
 <h1>Welcome to C-alculator </h1>
 
 <h2>What is this all about?</h2>
