@@ -38,8 +38,8 @@ Well enough of this boring introduction, let’s start learning and have some fu
 Below are a number of factors considered in designing and implementing our project. Each factor has been justified appropriately.
 
 1.	Age range – we are targeting candidates sitting their GCSE examinations, such as yourselves, i.e. age range 14-16. This is because:
-•	Your age range is more suited to our chosen programming language (C), which is a little more complex than some more beginner-friendly languages such as Python. 
-•	Learning about Computer Science at this age may inspire you to take an A-Level in the subject, and possibly consider a degree or even a career in Computer Science.
+  *Your age range is more suited to our chosen programming language (C), which is a little more complex than some more beginner-friendly languages such as Python. 
+  *Learning about Computer Science at this age may inspire you to take an A-Level in the subject, and possibly consider a degree or even a career in Computer Science.
 2.	Language being taught – we are teaching the C programming language. This is because:
 •	C has a large number of practical applications and can be used as a springboard for you learners to make their own projects. Other languages e.g. HTML (which isn’t strictly a programming language), generally need supports like CSS in order to work well. C is “standalone” in that sense.
 •	C provides a nice introduction to procedural programming.
