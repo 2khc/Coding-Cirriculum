@@ -2,7 +2,8 @@
 A coding curriculum designed by Kelvin Chan, Farooq Dean, Fasbeer Eskander, Thomas Yenbamroong
 
 ##### Table of Contents
-[Welcome to C-alculator](#welcome-to-c-alculator)
+[Welcome to C-alculator](#welcome-to-c-alculator)  
+[About us]()
 [Overview](#coding-curriculum--overview-of-design-specifications)
 
 <h1>Welcome to C-alculator</h1>
@@ -32,7 +33,9 @@ Well enough of this boring introduction, let’s start learning and have some fu
 
     <div><h4>Thomas</h4></div>
 
-    <div><h4>Farooq</h4></div>
+    <div><h4>Farooq</h4>
+    <p>I'm Farooq Dean and I'm a computer science student at UCL. I try to learn languages in my spare time and sometimes play basketball.</p>
+    </div>
 
 </div>
 
@@ -41,7 +44,7 @@ Well enough of this boring introduction, let’s start learning and have some fu
 
 Below are a number of factors considered in designing and implementing our project. Each factor has been justified appropriately.
 
-1. Age range – we are targeting candidates sitting their GCSE examinations, such as yourselves, i.e. age range 14-16. This is because:
+1. <em>Age range</em> – we are targeting candidates sitting their GCSE examinations, such as yourselves, i.e. age range 14-16. This is because:
   * Your age range is more suited to our chosen programming language (C), which is a little more complex than some more beginner-friendly languages such as Python. 
   * Learning about Computer Science at this age may inspire you to take an A-Level in the subject, and possibly consider a degree or even a career in Computer Science.
 2. Language being taught – we are teaching the C programming language. This is because:
