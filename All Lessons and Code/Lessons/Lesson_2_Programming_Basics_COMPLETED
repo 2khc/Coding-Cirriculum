@@ -1,1 +1,33 @@
+Lesson 2 Explanation – “Programming Basics”
+
+This second lesson will introduce you to the basics of programming by getting you to program the standard “Hello World!” program; typically a tradition for first-time programmers. 
+
+1.	Let’s begin. From lesson 1, you should already have you text editor and compiler installed. You may be using an IDE if you have a bit of experience; either is fine. 
+
+2.	Open and save a new .c file. Name it something appropriate e.g. project1.c and save it, ideally in a folder dedicated to all your exercise files. 
+
+3.	Now, let’s write out your first program. Type the following into the Text Editor/IDE:
+
+#include <stdio.h>
+
+main()
+{
+	Printf(“hello world! \n”);
+}	
+// this program prints hello world!
+
+4.	Now, you need to save and run your program, in the same way as detailed in lesson 1. 
+
+Let’s take a closer look at each of the components in our code, so we can understand exactly what they do and why they work. 
+
+#include <stdio.h> - this is typically called an “include statement”. The file between the angle brackets is called a library. It helps your computer understand what you mean later on by things like “printf” – remember, computers are innately dumb and need to be told what these things mean. A library, like stdio.h, is just a big file of different functions. For example, if you wanted to do some maths in your program (e.g. multiply something together), and you used some maths functions, you’d include a maths library like so: #include <math.h>. 
+
+main() – this is referred to as the “main function”. It’s where the bulk of your code goes, and no program is complete without a main function. This is the first function that’s run whenever you execute your program. 
+
+{} – the curly brackets show us where a function starts and ends. 
+
+Printf() – this is a function (it takes an input, and produces some output – in this case it outputs “hello world” on the screen). Printf takes strings as arguments – this just means that whatever is between the brackets () is the argument. The end of such a statement is indicated by a semicolon
+*TIP: you might be thinking, what does \n mean? This is called an escape character, and just goes to the next line for you once it prints out what you wanted it to. 
+
+// comments – these are notes written by programmers, for programmers. They are notes to yourself to help you understand code, why you wrote something a particular way, how something works, what some particular code does, etc.
 
