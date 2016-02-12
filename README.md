@@ -95,3 +95,6 @@ That's it! A fully working program, but how do we run it? We can't simply just d
   * The compile file is now called output, and to run it you can type "output" and see the results of your program.
 
 If you found this all simple enough, the real programming begins next lesson, as well as an introduction to what everything means, that program we just wrote together will all make sense very soon!
+
+###Extra Task
+Now that you know how to compile your code, spend a few minutes exploring your computer through the command-line, move around! Pick a distant folder and try to move into it from where you currently are! Try opening other files through the command-line… next time you want to listen to a music file, navigate there by command-line!
