@@ -12,8 +12,8 @@ Fasbeer 23
 ##### Table of Contents
 [Welcome to C-alculator](#welcome-to-c-alculator)  
 [About us](#about-us)  
-[Overview](#coding-curriculum--overview-of-design-specifications)
-[Lesson 1: Getting Started](#lesson-1-getting-started)
+[Overview](#coding-curriculum--overview-of-design-specifications)  
+[Lesson 1: Getting Started](#lesson-1-getting-started)  
 
 <h1>Welcome to C-alculator</h1>
 
