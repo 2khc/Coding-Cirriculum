@@ -3,11 +3,13 @@ A coding curriculum designed by Kelvin Chan, Farooq Dean, Fasbeer Eskander, Thom
 
 ###Notes for the markers
 This page is temporary for you to see our completed content. We are aiming to publish online on another host if GitHub happens to not be sufficient for our purposes.
-The decided mark distributions are:
+The decided mark distributions are:  
+
 Kelvin 27  
 Farooq 26  
 Thomas 24  
 Fasbeer 23  
+
 The syllabus we have been so far can be found in /All Lessons and Code/LessonSyllabus.pdf. That is the plan we will be following for our lessons.
 So far we have 2 fully completed lessons and source code written for 4 lessons.
 
