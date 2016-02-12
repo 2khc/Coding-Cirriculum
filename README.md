@@ -13,6 +13,9 @@ Fasbeer 23
 The syllabus we have been so far can be found in `/All Lessons and Code/LessonSyllabus.pdf`. That is the plan we will be following for our lessons.
 So far we have 2 fully completed lessons and source code written for 4 lessons.
 
+Finally we plan to include some images to break-up the text flow, but what these will be are currently undecided at the moment. It will depend upon the format taken
+when the final content is published.
+
 ##### Table of Contents
 [Welcome to C-alculator](#welcome-to-c-alculator)  
 [About us](#about-us)  
