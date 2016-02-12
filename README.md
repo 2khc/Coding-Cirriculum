@@ -1,10 +1,19 @@
 # CodingCurriculum
 A coding curriculum designed by Kelvin Chan, Farooq Dean, Fasbeer Eskander, Thomas Yenbamroong
 
+###Notes for the markers
+This page is temporary for you to see our completed content. We are aiming to publish online on another host if GitHub happens to not be sufficient for our purposes.
+The decided mark distributions are:
+Kelvin 27
+Farooq 26
+Thomas 24
+Fasbeer 23
+
 ##### Table of Contents
 [Welcome to C-alculator](#welcome-to-c-alculator)  
 [About us](#about-us)  
 [Overview](#coding-curriculum--overview-of-design-specifications)
+[Lesson 1: Getting Started](#lesson-1-getting-started)
 
 <h1>Welcome to C-alculator</h1>
 
@@ -56,7 +65,7 @@ Below are a number of factors considered in designing and implementing our proje
 This first lesson will make sure that both you and your computer are prepared correctly to handle all the programming tasks you'll be completing as you progress through this course!
 
 Let's get started. You'll be needing a text editor. If you're looking for something with a nice and beautiful theme, we recommend [Sublime Text 3](https://www.sublimetext.com/3), if you want something
-a little more plain you can simply go for Notepad++(https://notepad-plus-plus.org/download/v6.8.8.html).
+a little more plain you can simply go for [Notepad++](https://notepad-plus-plus.org/download/v6.8.8.html).
 
 The next step is to install a C **compiler** onto your computer. "What is a compiler?", you ask... Well, as mentioned earlier, C is a low-level programming language meaning that the commands in C are closely related to the instructions that your **computer processing unit** would run. **HOWEVER**, this still means that the language is undirectly unreadable by the CPU, as such, you need to first compile your code
 such that it is translated into a form that your CPU can run.
