@@ -16,6 +16,8 @@ So far we have 2 fully completed lessons and source code written for 4 lessons.
 Finally we plan to include some images to break-up the text flow, but what these will be are currently undecided at the moment. It will depend upon the format taken
 when the final content is published.
 
+The content can all be downloaded from the `/all Lessons and Code/` folder if you wish. Or you can just view it from here.
+
 ##### Table of Contents
 [Welcome to C-alculator](#welcome-to-c-alculator)  
 [About us](#about-us)  
