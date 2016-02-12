@@ -35,7 +35,8 @@ Well enough of this boring introduction, let’s start learning and have some fu
 <h3>About Us</h3>
 
 <h4>Kelvin Chan</h4>
-<p>Slacker guy on team doing some work.</p>
+<p>My name is Kelvin, I was born in London though my parents were from Hong Kong. I feel that we're in an age that places extreme importance on computers. No matter where you are, what you want to do for work,
+who you are, a computer is going to come in at some point and be needed to proceed. If you love technology, and you want to create things to be used on such technology, learning to program would be your first step into truly embracing the world of technology!</p>
 
 <h4>Fasbeer</h4>
 I'm Fasbeer Eskander, A 1st year in computer science at UCL. I've always been interested in programming and all the wonders one can do with technology if he knows how it is programmed and how to program one himself. With a keen interest on it from a child, i decided to do my Bsc on computer science and learn the DNA of computer programs.
