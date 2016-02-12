@@ -1,24 +1,32 @@
-#include <stdio.h>
+#include <stdio.h> // explain this
 
-double basicAddition();
+// this is the first lesson, explain everything?
 
+// A basic calculator that takes 2 inputs, and adds numbers together.
+// program terminates after operation complete.
+
+// explain the purpose of the main function and the
+// meaning of void
 int main(void)
 {
-    basicAddition();
+    basicAddition();  //explain function call
 }
 
-
-// A basic calculator that takes a single input continuously and adds it onto the previous number.
-// uses a while loop.
-double basicAddition()
+int basicAddition()
 {
-    // Basic Addition
-    double sum = 0;
-    double input;
-    while (scanf("%lf", &input))
-    {
-        sum += input;
-        printf("Sum + input = %f\n", sum);
-    }
-    return sum;
+    // need to give a description of all primitive datatypes here to the student.
+    int numOne;
+    int numTwo;
+
+    printf("Enter the first number: ");
+    scanf("%i", &numOne);
+    printf("Enter the second number: ");
+    scanf("%i", &numTwo);
+
+    int result = numOne + numTwo;
+
+    printf("%i + %i = %i", numOne, numTwo, result);
+
+    return result;
+
 }
