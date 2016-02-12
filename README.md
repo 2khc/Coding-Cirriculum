@@ -65,12 +65,12 @@ Download the compiler [here](http://www.mingw.org/), you can see the button for 
 
 Open your note editor and create a new file, save it with the C file extension, for example: "lesson1.c". We've decided to adhere to traditions so your first program will be a "Hello, world!" program, first this first lesson, just type out everything we tell you to, as the ultimate aim of this section is to teach you how to compile and run your code.
 
-#include <stdio.h>
+`#include <stdio.h>
 
 int main(void)
 {
     printf("Hello, world");
-}
+}`
 
 That's it! A fully working program, but how do we run it? We can't simply just double-click on the file and hope it would do something useful... In other worlds, we must first compile it.
 
