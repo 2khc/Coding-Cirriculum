@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../img/favicon.ico">
 
-	<title>About - C-alculator</title>
+	<title>Chapter 6 - C-alculator</title>
 
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -86,14 +86,14 @@
             
             
             
-                <li >
-                    <a href="../chapter6/">Chapter 6</a>
+                <li class="active">
+                    <a href="./">Chapter 6</a>
                 </li>
             
             
             
-                <li class="active">
-                    <a href="./">About</a>
+                <li >
+                    <a href="../about/">About</a>
                 </li>
             
             
@@ -107,12 +107,12 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="next" href="../chapter6/">
+                    <a rel="next" href="../chapter5/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
-                <li class="disabled">
-                    <a rel="prev" >
+                <li >
+                    <a rel="prev" href="../about/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -126,31 +126,63 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#about-us">About Us</a></li>
+        <li class="main active"><a href="#functions">Functions</a></li>
         
-            <li><a href="#kelvin-chan">Kelvin Chan</a></li>
+            <li><a href="#what-are-functions">What are Functions?</a></li>
         
-            <li><a href="#fasbeer">Fasbeer</a></li>
-        
-            <li><a href="#thomas">Thomas</a></li>
-        
-            <li><a href="#farooq">Farooq</a></li>
+            <li><a href="#exercise">Exercise:</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="about-us">About Us</h1>
-<h2 id="kelvin-chan">Kelvin Chan</h2>
-<p>My name is Kelvin, I was born in London though my parents were from Hong Kong. I feel that we're in an age that places extreme importance on computers. No matter where you are, what you want to do for work,
-who you are, a computer is going to come in at some point and be needed to proceed. If you love technology, and you want to create things to be used on such technology, learning to program would be your first step into truly embracing the world of technology!</p>
-<h2 id="fasbeer">Fasbeer</h2>
-<p>I'm Fasbeer Eskander, A 1st year in computer science at UCL. I've always been interested in programming and all the wonders one can do with technology if he knows how it is programmed and how to program one himself. With a keen interest on it from a child, i decided to do my Bsc on computer science and learn the DNA of computer programs.</p>
-<h2 id="thomas">Thomas</h2>
-<p>I'm Thomas, a first year computer science student at UCL. I first got inspired by the movie called The Social Network which is about how Facebook got started. Since then Facebook has gone on and made a number of big impacts in many aspects of our lives. This has me want to do the same, with the skills I've been learning as a computer scientist, to make the world a better place.</p>
-<h2 id="farooq">Farooq</h2>
-<p>I'm Farooq Dean and I'm a computer science student at UCL. I try to learn languages in my spare time and sometimes play basketball.</p></div>
+<h1 id="functions">Functions</h1>
+<h2 id="what-are-functions">What are Functions?</h2>
+<p>All this time, we’ve been using functions to write our codes, such as main() function, printf() function, scanf() function etc. These functions have been pre-written and its instructions given by another programmer. When loading the library at the beginning by using #include<stdio.h>, the compiler or IDE loads these functions including a few more. The computer does not know what a function does unless they are instructed what to do when it is called. Remember, computers are actually very dumb!
+What exactly are functions? Functions are in a way an abbreviated form of a specific task or a lot of tasks. They are given instructions and then given a name. Even the ‘if’, ’for’, ’while’, ’do while’, ‘switch’ statements are also functions prewritten into the library which have been instructed to carry out their specific tasks. You may ask what the point is in writing functions, we could just write the instructions after main() while writing the program. Well yes we could do that but it would make our code look very clumsy! We use functions to make our codes shorter and more legible when the writer and even other programmers look at the code. Once the function has been written, we can call the function multiple times and hence make the code shorter, saves a lot of time than writing the task which the function would do again and again.
+Writing a function
+To write a function, first we need to describe the return value of the function. For example, if we write a function to get the greater value of two numbers, the return value should be an int, float or a double. Let’s do just that then, define a function to get the larger of two numbers. Let’s call the function greater(). We declare the function like this:</p>
+<pre><code> int greater();
+</code></pre>
+<p>By doing this we named a function. Now, the function greater will compare two numbers, which means it will be taking two arguments or parameters. An argument is a local variable that gets its value from the code that calls the function. The rest of the code will look something like this:</p>
+<pre><code> int greater( int a, int b)
+ {
+    if (a &gt; b)
+    {
+        return a;
+        return b;
+    }
+ }
+</code></pre>
+<p>This describes a function to get greater of two numbers, a and b -&gt; the two arguments. As you can see, the argument type also has to be declared in the function. After the curly braces, the instruction of the function is given, to compare the value of a and b then return whichever is greater to the main function after it is called.
+The greater function can be used like this:</p>
+<pre><code> int main()
+ {
+    int ans = greater(a , b );
+    printf("%d", ans);
+    return 0;
+ }
+</code></pre>
+<p>Instead of a and b, numbers have to be input and the answer will be printed in the terminal.</p>
+<h3 id="void-functions">Void functions</h3>
+<p>Most functions in C have values to be returned but sometimes a function can be created to do nothing special. It can be created to do something instead of calculating a number or returning a string to the main function. All functions created always contain a return statement at the end, such as ‘return 0;’ but a void function does not require one as the called function will not return a value.</p>
+<pre><code> void show_off()
+ {
+    printf(“I am the best programmer you’ll see”);
+ }
+</code></pre>
+<p>The code above is an example of a void function. When the show_off function is called, it prints the statement to the terminal instead of returning a value to the main function.</p>
+<h2 id="exercise">Exercise:</h2>
+<ol>
+<li>Write a function for:</li>
+<li>Adding two numbers</li>
+<li>Subtracting two numbers</li>
+<li>Dividing two numbers</li>
+<li>Multiplying two numbers</li>
+<li>Use the functions created to make a calculator in the terminal. (Hint: use conditional statements)</li>
+</ol>
+<h3 id="suggested-solution">Suggested solution:</h3></div>
         </div>
 
         <footer class="col-md-12">

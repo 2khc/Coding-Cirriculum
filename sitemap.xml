@@ -4,39 +4,55 @@
     
     <url>
      <loc>None/</loc>
-     <lastmod>2016-03-15</lastmod>
+     <lastmod>2016-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>None/lesson 1/</loc>
-     <lastmod>2016-03-15</lastmod>
+     <loc>None/chapter1/</loc>
+     <lastmod>2016-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>None/lesson 2/</loc>
-     <lastmod>2016-03-15</lastmod>
+     <loc>None/chapter2/</loc>
+     <lastmod>2016-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>None/lesson 3/</loc>
-     <lastmod>2016-03-15</lastmod>
+     <loc>None/chapter3/</loc>
+     <lastmod>2016-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>None/lesson 4/</loc>
-     <lastmod>2016-03-15</lastmod>
+     <loc>None/chapter4/</loc>
+     <lastmod>2016-03-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>None/chapter5/</loc>
+     <lastmod>2016-03-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>None/chapter6/</loc>
+     <lastmod>2016-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -44,7 +60,7 @@
     
     <url>
      <loc>None/about/</loc>
-     <lastmod>2016-03-15</lastmod>
+     <lastmod>2016-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
     

@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../img/favicon.ico">
 
-	<title>Lesson 1 - C-alculator</title>
+	<title>Chapter 4 - C-alculator</title>
 
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -56,26 +56,38 @@
             
             
             
+                <li >
+                    <a href="../chapter1/">Chapter 1</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../chapter2/">Chapter 2</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../chapter3/">Chapter 3</a>
+                </li>
+            
+            
+            
                 <li class="active">
-                    <a href="./">Lesson 1</a>
+                    <a href="./">Chapter 4</a>
                 </li>
             
             
             
                 <li >
-                    <a href="../lesson%202/">Lesson 2</a>
+                    <a href="../chapter5/">Chapter 5</a>
                 </li>
             
             
             
                 <li >
-                    <a href="../lesson%203/">Lesson 3</a>
-                </li>
-            
-            
-            
-                <li >
-                    <a href="../lesson%204/">Lesson 4</a>
+                    <a href="../chapter6/">Chapter 6</a>
                 </li>
             
             
@@ -95,12 +107,12 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="next" href="..">
+                    <a rel="next" href="../chapter3/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../lesson%202/">
+                    <a rel="prev" href="../chapter5/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -114,44 +126,58 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#lesson-1-getting-started">Lesson 1: Getting started</a></li>
+        <li class="main active"><a href="#chapter-4-programme-looping">Chapter 4: Programme Looping</a></li>
         
-            <li><a href="#extra-task">Extra Task</a></li>
+            <li><a href="#the-for-statement">The for statement</a></li>
+        
+            <li><a href="#the-while-statement">The while statement</a></li>
+        
+            <li><a href="#the-do-statement">The do statement</a></li>
+        
+            <li><a href="#exercises">Exercises</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h2 id="lesson-1-getting-started">Lesson 1: Getting started</h2>
-<p>This first lesson will make sure that both you and your computer are prepared correctly to handle all the programming tasks you'll be completing as you progress through this course!</p>
-<p>Let's get started. You'll be needing a text editor. If you're looking for something with a nice and beautiful theme, we recommend <a href="https://www.sublimetext.com/3">Sublime Text 3</a>, if you want something
-a little more plain you can simply go for <a href="https://notepad-plus-plus.org/download/v6.8.8.html">Notepad++</a>.</p>
-<p>The next step is to install a C <strong>compiler</strong> onto your computer. "What is a compiler?", you ask... Well, as mentioned earlier, C is a low-level programming language meaning that the commands in C are closely related to the instructions that your <strong>computer processing unit</strong> would run. <strong>HOWEVER</strong>, this still means that the language is undirectly unreadable by the CPU, as such, you need to first compile your code
-such that it is translated into a form that your CPU can run.</p>
-<p>Download the compiler <a href="http://www.mingw.org/">here</a>, you can see the button for "Download Installer" at the top right corner of the page.</p>
-<p>Open your note editor and create a new file, save it with the C file extension, for example: "lesson1.c". We've decided to adhere to traditions so your first program will be a "Hello, world!" program, first this first lesson, just type out everything we tell you to, as the ultimate aim of this section is to teach you how to compile and run your code.</p>
-<pre><code> #include &lt;stdio.h&gt;
-
- int main(void)
- {
-     printf("Hello, world");
+<h1 id="chapter-4-programme-looping">Chapter 4: Programme Looping</h1>
+<p>One of the great capabilities of computers is their power to perform repeated calculations. This chapter will help you understand some constructs designed to do just that.</p>
+<h2 id="the-for-statement">The for statement</h2>
+<p>The for statement or for loop is one of the most frequently used statement. It allows you to do repeated calculations with a starting value until a condition is not satisfied.</p>
+<pre><code> for ( initial_expression; loop_condition; loop_expression ) {
+      program statement(s);
  }
 </code></pre>
-<p>That's it! A fully working program, but how do we run it? We can't simply just double-click on the file and hope it would do something useful... In other worlds, we must first compile it.</p>
-<ol>
-<li>First, open your command-line or terminal. To do this on Windows, press Windows + R, then type cmd into the box and hit 'OK'. Meet the command-line interface, this scary black window, you'll become good friends with it on your programming journeys.</li>
-<li>Navigate to the directory on your computer in which you saved the file.</li>
-<li>For example, if I am currently in "C:/users/Documents" and I want to go into "C:/users/Documents/code", I would type "cd code" to move into the "code" folder.</li>
-<li>If you wish to move up a folder, on Windows you can type "cd..", on an Mac or Linux type "cd .." (make sure to include that space).</li>
-<li>Next, we shall compile the code.</li>
-<li>Type "gcc" followed by the name of your file, then followed by the name you wish the compiled code to be.</li>
-<li>For example "gcc lesson1.c output".</li>
-<li>The compile file is now called output, and to run it you can type "output" and see the results of your program.</li>
-</ol>
-<p>If you found this all simple enough, the real programming begins next lesson, as well as an introduction to what everything means, that program we just wrote together will all make sense very soon!</p>
-<h3 id="extra-task">Extra Task</h3>
-<p>Now that you know how to compile your code, spend a few minutes exploring your computer through the command-line, move around! Pick a distant folder and try to move into it from where you currently are! Try opening other files through the command-line… next time you want to listen to a music file, navigate there by command-line!</p></div>
+<p>initial_expression; used to set up the value before a loop begins
+loop_condition; looping continues as long as this loop condition is satisfied
+loop_expression; contains an expression that is evaluated each time after the body of the loop is            executed</p>
+<p>( code samples )</p>
+<h2 id="the-while-statement">The while statement</h2>
+<p>The while loop is another frequently used statement which has the syntax as follows.</p>
+<pre><code> while ( expression ) {
+     program statement(s);
+ }
+</code></pre>
+<p>The expression in the parentheses is evaluated; if it is evaluated to be true, the statements within the square brackets are then executed. As soon as the expression is evaluated Falsh, the programme will exit from the loop.</p>
+<p>( code samples )</p>
+<h2 id="the-do-statement">The do statement</h2>
+<p>This statement is fairly similar to the while statement except that the body of the do loop is executed at least once.</p>
+<pre><code> do
+ {
+     // something
+ }
+ while ( loop_expression );
+</code></pre>
+<p>Before entering the while loop, the program will first execute the statements just below “do”.</p>
+<p>( code samples )</p>
+<h3 id="the-break-statement">The break statement</h3>
+<p>Sometimes it is need to immediately exit the loop at a certain point. This can be done using the break statement.</p>
+<p>( code samples )</p>
+<h3 id="the-continue-statement">The continue statement</h3>
+<p>The continue statement is similar the the beak statement except it cause the loop to terminate. To be more precise, it causes the loop to continue.</p>
+<p>( code samples )</p>
+<h2 id="exercises">Exercises</h2></div>
         </div>
 
         <footer class="col-md-12">

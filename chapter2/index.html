@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+
+	<title>Chapter 2 - C-alculator</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <link href="../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="..">C-alculator</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="..">Home</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../chapter1/">Chapter 1</a>
+                </li>
+            
+            
+            
+                <li class="active">
+                    <a href="./">Chapter 2</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../chapter3/">Chapter 3</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../chapter4/">Chapter 4</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../chapter5/">Chapter 5</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../chapter6/">Chapter 6</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../about/">About</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../chapter1/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../chapter3/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#chapter-2-programming-basics">Chapter 2: Programming Basics</a></li>
+        
+            <li><a href="#what-is-that-program-written-in-the-1st-chapter">What is that program written in the 1st chapter?</a></li>
+        
+            <li><a href="#data-types">Data Types</a></li>
+        
+            <li><a href="#variables">Variables</a></li>
+        
+            <li><a href="#arithmetic-expressions">Arithmetic Expressions</a></li>
+        
+            <li><a href="#exercises">Exercises</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="chapter-2-programming-basics">Chapter 2: Programming Basics</h1>
+<p>Before we can get into any coding stuff, we first need to understand some basic rules of programming first. Programming is pretty much all about taking in inputs and giving you out desired outputs. To make things a little bit more organised and understandable, these inputs and outputs are categorised into different groups called data types and are usually stored in variables.</p>
+<h2 id="what-is-that-program-written-in-the-1st-chapter">What is that program written in the 1st chapter?</h2>
+<p>Here is the short program that you wrote and ran in the last chapter:</p>
+<pre><code> #include &lt;stdio.h&gt;
+
+ int main(void)
+ {
+     printf("Hello, world");
+ }
+</code></pre>
+<p>The first line of that program is '#include <stdio.h>', what this does is imports code into your program so that you can use things that have already been written by
+other programmers for you to use. We programmers don't like to reinvent the wheel. The library being imported is 'stdio', which stands for standard input output. It allows
+use to use the printf function. The thing we put in-between the parentheses is called an argument to the function. It is the information which we input into the function
+for it to create some output. The output in this case is 'Hello, world'.</p>
+<p>The next thing to consider is the 'int main(void)'. What is this?  We can see that int main(void) is followed by a curly bracket '{'. These curly brackets always come in pairs.
+You can see that the one that completes the pair is the '}' at the very end of the program. Everything between these 2 curly brackets belong in the 'main' function.</p>
+<p>Another important thing to remember is that the main function is the beginning of every C program.</p>
+<pre><code> int main(void)
+ {
+
+ }
+</code></pre>
+<p>This has to exist in every C program and it is where everything begins.</p>
+<h2 id="data-types">Data Types</h2>
+<p>The C programming language provides five basic types: int, float, double, char and boolean</p>
+<h3 id="the-integer-type-int">The Integer Type int</h3>
+<p>A variable declared to be of type int can only contain integral values or values that do not have decimal places. To display an int value at the terminal, the printf conversion characters %iV are used.</p>
+<p>Examples: -23, -83, 0, 435 and 1</p>
+<h3 id="the-floating-number-type-float">The Floating Number Type float</h3>
+<p>A variable declared to be of type float can be used for storing values containing decimal places. To display an int value at the terminal, the printf conversion characters %f are used. To express a value of type float, f or F is put after a value such as 14.5f or -122.23F.</p>
+<p>Examples: 3.0, 23.42, -0.3329 and 9.023</p>
+<h3 id="the-type-double">The Type double</h3>
+<p>The double type is very similar to the float type except that it is more precise. It can store approximately as many significant digits as can a variable declared to be of type float. All floating-point values are taken as the double type unless told otherwise.</p>
+<h3 id="char-type">Char type</h3>
+<p>The char type is used to store a single character. Characters can be declared by enclosing a pair of quotation marks around them as follows; ‘a’, ‘D’, ‘3’ and ’T’. To display a char value at the terminal, the printf conversion characters %c are used</p>
+<h3 id="the-boolean-data-type-boolean">The Boolean Data Type boolean</h3>
+<p>A variable declared to be of type boolean can only store 1 and 0 or True or False. boolean is used to indicate a Boolean condition or a condition which can be outputted to either true or false.</p>
+<p>Using the Basic Data Types……..(put down the code written by Kelvin)</p>
+<h2 id="variables">Variables</h2>
+<p>Variables are named and used to store program computations or results. Variables can be named in a way that reflect the usage of the data stored. For example, I can create a variable called “numberOfpens” to store an int type which represents the number of pens I possess.</p>
+<p>numberOfpens = 4;</p>
+<h3 id="naming-conventions">Naming Conventions</h3>
+<p>There are certain rules that we need to follow when it comes down to naming variables.</p>
+<p>Variable names can’t begin with a number.
+Embedded spaces are not permitted.
+Variable names can’t be those that are same to reserved words in C e.g. int, float and so on.
+$ is not a valid character.</p>
+<p>Although we cannot include any spaces in our variable names, programmers tend to use underscores( _ ) or uppercase letters to represent next words.</p>
+<p>Examples: calculate_Angle
+          isBlack</p>
+<h2 id="arithmetic-expressions">Arithmetic Expressions</h2>
+<p>C’s arithmetic expressions work pretty much the same way as those we use in the real-world. However, some of the maths rules might not be as you expect depending on the type that a variable is declared to be.</p>
+<p>When there are two or more operations the idea of priority or precedence is introduced to determine which operation is to be evaluated first.</p>
+<p>The following notions are listed in an order of precedence.</p>
+<p>multiplication sign -&gt; ( * )
+division sign -&gt; ( / )
+plus sign -&gt; ( + )
+minus sign -&gt; ( - )</p>
+<p>(include some codes as examples showing different operations)</p>
+<h2 id="exercises">Exercises</h2>
+<p>(some exercise at the end of the chapter)</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

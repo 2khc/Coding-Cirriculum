@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../img/favicon.ico">
 
-	<title>Lesson 2 - C-alculator</title>
+	<title>Chapter 5 - C-alculator</title>
 
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -57,25 +57,37 @@
             
             
                 <li >
-                    <a href="../lesson%201/">Lesson 1</a>
+                    <a href="../chapter1/">Chapter 1</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../chapter2/">Chapter 2</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../chapter3/">Chapter 3</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../chapter4/">Chapter 4</a>
                 </li>
             
             
             
                 <li class="active">
-                    <a href="./">Lesson 2</a>
+                    <a href="./">Chapter 5</a>
                 </li>
             
             
             
                 <li >
-                    <a href="../lesson%203/">Lesson 3</a>
-                </li>
-            
-            
-            
-                <li >
-                    <a href="../lesson%204/">Lesson 4</a>
+                    <a href="../chapter6/">Chapter 6</a>
                 </li>
             
             
@@ -95,12 +107,12 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="next" href="../lesson%201/">
+                    <a rel="next" href="../chapter4/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../lesson%203/">
+                    <a rel="prev" href="../chapter6/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -114,72 +126,83 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#inquam-reliquerat">Inquam reliquerat</a></li>
+        <li class="main active"><a href="#chapter-5-making-decisions">Chapter 5: Making Decisions</a></li>
         
-            <li><a href="#dona-utrimque-canes">Dona utrimque canes</a></li>
+            <li><a href="#the-if-statement">The if Statement</a></li>
         
-            <li><a href="#exul-lacerata-vidit">Exul lacerata vidit</a></li>
+            <li><a href="#the-switch-statement">The switch Statement</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="inquam-reliquerat">Inquam reliquerat</h1>
-<h2 id="dona-utrimque-canes">Dona utrimque canes</h2>
-<p>Lorem markdownum acrior <em>Erysicthona genus</em> Veneris tutissimus parem, satis
-dicimus. Exaudi absitque tollere luebat. Peto aulaea movi, inhospita fabula
-antiquam ecce. Enim locus nece et ait, frui metu in moenibus galeam, <a href="http://www.lipsum.com/">conprecor
-supplex</a>, obvertit. Referrem robur, pone antris puppe
-cernunt numina, monuit quod!</p>
-<pre><code>fileViewUrl.pppoeLun = camelcaseSoStandalone;
-if (signatureOutbox) {
-    bit_css(bit_engine);
-}
-pum.spooling = address(1, cpuMatrixBatch.kilohertzMipsPrinter(
-        lockBusRipcording, -2, -5), tweak) * domain(management) + 3;
-if (debugger &lt; firmwareDay) {
-    sdram += storageZebibyteUser;
-}
-leafCaptchaPublic -= -2;
+<h1 id="chapter-5-making-decisions">Chapter 5: Making Decisions</h1>
+<p>You saw how decision-making powers were used in Chapter 4 with loops. Without such capabilities those loops we saw in the previous chapter would end up execute the same sequence of statements over and over again.</p>
+<h2 id="the-if-statement">The if Statement</h2>
+<p>C provides a general decision-making capability in the form of a language construct known as the if statement.</p>
+<pre><code> if ( expression )
+ {
+     programme statement(s);
+ }
 </code></pre>
-<p>Poena vela, de illo iuves, parari est munus quod oculos. Inguina <strong>invita quoque
-contudit</strong> et infera equis infesto Ulixes primaeque foedoque. Subposuisse
-adverso, dea carbasa membris.</p>
-<h2 id="exul-lacerata-vidit">Exul lacerata vidit</h2>
-<p>Crimina aras coniuge Victoria; lumen Sirinosque omnia, ab virtus si templi
-Aethiopum est. Turbamque lingua descendere <em>utque et suspensus</em> properatus quam
-<strong>pristina</strong> alternare me umbra. Cervo dirae vitam longaque!</p>
-<pre><code>ataRadcabBuffer.view += only.memory(pixel(socketRemote, packUnicode,
-        margin_prebinding_file));
-if (4) {
-    sidebar = downHdtv;
-    bounce.pad -= ospf_irc;
-} else {
-    lion_title(pebibyteMotherboardNull, minimizeThermistor,
-            virtual_midi_mirror);
-}
-if (28) {
-    virusWep.search_applet_vdsl = fddi_vector_threading;
-    lcd_undo = 49 + 699901;
-    portal_clob_cpc = speakers(core, unmountGateway);
-} else {
-    host_matrix.menu = character;
-    impression.gifType += superscalar_copy;
-    httpSdHtml += 51;
-}
-var digitalHardLeft = -2;
+<p>To simplify things a little, we can think of this as a normal English sentence such as “ If it rains, you will get wet and sick”. A C version of this would be:</p>
+<pre><code> if ( it rains ) {
+     you will get wet;
+     you will get sick;
+ }
 </code></pre>
-<p>Certamine domos conditor sed putas ipsum cursu est egredior umerumque Ulixes
-<em>parentis dixere</em>, debita scelerataque visa. Nepotis eam, ave occuluit <strong>opusque
-conducit</strong> altae religatus salictis alios. Haereat ut tempus festaque, pro
-torreri in Pyrrhus vocem, et. Ante cum constitit, qui est vidi inquit noctes,
-quoque continet sonarent. Agros fingens fortisque <em>mensas</em>, gener nec firmat
-Desierat <strong>cum</strong> adsuerant Aeneae nemus.</p>
-<p>Dolores animaque cunctos floresque vixque squalebant aliud non promissa huic.
-Flammas suum lustrat Priamidas torquetur cedere nisi. Qua illuc et versus
-vicisse ubi glacies et <strong>sistitur aratri</strong> et mittit, adhibete ad frustra
-fetibus loquendi.</p></div>
+<p>( code as examples )</p>
+<pre><code> int main(void)
+ {
+    int number = 4;
+
+    if ( number &lt; 5 )
+    {
+        printf("number is less than 5\n");
+    }
+ }
+</code></pre>
+<p>In the example above, we have code that first initialises an integer called 'number' to the value of 4. We then begin the if statement, and create a condition to check for.
+ The code inside the if statement only runs if conditions are met. In this case, if number is less than 5, run the code inside the if statement. As it stands, the value of
+ number is 4, which is less than 5, so the code inside the if statement runs!</p>
+<h2 id="the-switch-statement">The switch Statement</h2>
+<pre><code> switch ( expression ) {
+     case value1:
+         programme statement(s);
+         break;
+     case value1:
+         programme statement(s);
+         break;
+     case valueN:
+         programme statement(s);
+         break;
+     default:
+         programme statement(s);
+         break;
+ }
+
+ int main(void)
+ {
+    int number;
+
+    scanf("%i", &amp;number);
+
+    switch (number)
+    {
+        case 0:
+            // something
+            //break;
+        case 1:
+            // something
+            break;
+        default:
+            //something
+            break;
+    }
+ }
+</code></pre>
+<p>## Exercises</p></div>
         </div>
 
         <footer class="col-md-12">
