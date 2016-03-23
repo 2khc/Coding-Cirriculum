@@ -136,7 +136,7 @@
         
             <li><a href="#arithmetic-expressions">Arithmetic Expressions</a></li>
         
-            <li><a href="#exercises">Exercises</a></li>
+            <li><a href="#exercises-lets-write-a-basic-calculator">Exercises: Let's Write a Basic Calculator!</a></li>
         
     
     </ul>
@@ -170,15 +170,28 @@ You can see that the one that completes the pair is the '}' at the very end of t
 <h2 id="data-types">Data Types</h2>
 <p>The C programming language provides five basic types: int, float, double, char and boolean</p>
 <h3 id="the-integer-type-int">The Integer Type int</h3>
-<p>A variable declared to be of type int can only contain integral values or values that do not have decimal places. To display an int value at the terminal, the printf conversion characters %iV are used.</p>
+<p>A variable declared to be of type int can only contain integer values or values that do not have decimal places (and are therefore whole numbers). To display an int value at the terminal, the printf conversion characters %iV are used.</p>
+<p>How would one declare a variable of type int?</p>
+<pre><code> int myVariable;
+</code></pre>
+<p>It's as simple as that! If you want, you can also add a value to it as you're intialising it like so:</p>
+<pre><code> int myVariable = 5;
+</code></pre>
 <p>Examples: -23, -83, 0, 435 and 1</p>
 <h3 id="the-floating-number-type-float">The Floating Number Type float</h3>
 <p>A variable declared to be of type float can be used for storing values containing decimal places. To display an int value at the terminal, the printf conversion characters %f are used. To express a value of type float, f or F is put after a value such as 14.5f or -122.23F.</p>
 <p>Examples: 3.0, 23.42, -0.3329 and 9.023</p>
+<p>Similar to the integer declaration, a float declaration would be as follows:</p>
+<pre><code> float myVariable;
+</code></pre>
 <h3 id="the-type-double">The Type double</h3>
 <p>The double type is very similar to the float type except that it is more precise. It can store approximately as many significant digits as can a variable declared to be of type float. All floating-point values are taken as the double type unless told otherwise.</p>
-<h3 id="char-type">Char type</h3>
+<pre><code> double myVariable;
+</code></pre>
+<h3 id="the-char-type">The char type</h3>
 <p>The char type is used to store a single character. Characters can be declared by enclosing a pair of quotation marks around them as follows; ‘a’, ‘D’, ‘3’ and ’T’. To display a char value at the terminal, the printf conversion characters %c are used</p>
+<pre><code> char myVariable;
+</code></pre>
 <h3 id="the-boolean-data-type-boolean">The Boolean Data Type boolean</h3>
 <p>A variable declared to be of type boolean can only store 1 and 0 or True or False. boolean is used to indicate a Boolean condition or a condition which can be outputted to either true or false.</p>
 <p>Using the Basic Data Types……..(put down the code written by Kelvin)</p>
@@ -192,8 +205,9 @@ Embedded spaces are not permitted.
 Variable names can’t be those that are same to reserved words in C e.g. int, float and so on.
 $ is not a valid character.</p>
 <p>Although we cannot include any spaces in our variable names, programmers tend to use underscores( _ ) or uppercase letters to represent next words.</p>
-<p>Examples: calculate_Angle
-          isBlack</p>
+<pre><code> calculate_angle
+ isBlack
+</code></pre>
 <h2 id="arithmetic-expressions">Arithmetic Expressions</h2>
 <p>C’s arithmetic expressions work pretty much the same way as those we use in the real-world. However, some of the maths rules might not be as you expect depending on the type that a variable is declared to be.</p>
 <p>When there are two or more operations the idea of priority or precedence is introduced to determine which operation is to be evaluated first.</p>
@@ -203,7 +217,36 @@ division sign -&gt; ( / )
 plus sign -&gt; ( + )
 minus sign -&gt; ( - )</p>
 <p>(include some codes as examples showing different operations)</p>
-<h2 id="exercises">Exercises</h2>
+<h2 id="exercises-lets-write-a-basic-calculator">Exercises: Let's Write a Basic Calculator!</h2>
+<p>The first thing we need to do is prepare to prepare the file for use. We are going to be displaying things on the terminal, and asking for input, so we'll need to
+include the 'stdio' library.</p>
+<pre><code> #include &lt;stdio.h&gt;
+
+ int main(void)
+ {
+
+ }
+</code></pre>
+<p>We now need to ask for user input, and store the input into some variables, so that we can add them together later.</p>
+<pre><code>#include &lt;stdio.h&gt;
+
+int main(void)
+{
+  int numberOne;
+  int numberTwo;
+
+  printf("Enter 2 numbers to add together:\n");
+  scanf("%d", &amp;numberOne);
+  scanf("%d". &amp;numberTwo);
+
+  printf("%d + %d = %d", numberOne, numberTwo, numberOne + numberTwo);
+}
+</code></pre>
+<p>Some new things have creeped up in this exercise. What does this 'scanf' do? Well, it takes input from the console then puts it into the variable stated in the second
+argument of the function.</p>
+<pre><code>  scanf("%d", &amp;numberOne);
+</code></pre>
+<p>This takes your input value and assigns it to numberOne, such that numberOne holds whatever whole number you decide to input.</p>
 <p>(some exercise at the end of the chapter)</p></div>
         </div>
 
