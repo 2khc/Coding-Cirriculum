@@ -130,6 +130,8 @@
         
             <li><a href="#what-are-functions">What are Functions?</a></li>
         
+            <li><a href="#writing-a-function">Writing a function</a></li>
+        
             <li><a href="#exercise">Exercise:</a></li>
         
     
@@ -140,9 +142,9 @@
 <h1 id="functions">Functions</h1>
 <h2 id="what-are-functions">What are Functions?</h2>
 <p>All this time, we’ve been using functions to write our codes, such as main() function, printf() function, scanf() function etc. These functions have been pre-written and its instructions given by another programmer. When loading the library at the beginning by using #include<stdio.h>, the compiler or IDE loads these functions including a few more. The computer does not know what a function does unless they are instructed what to do when it is called. Remember, computers are actually very dumb!
-What exactly are functions? Functions are in a way an abbreviated form of a specific task or a lot of tasks. They are given instructions and then given a name. Even the ‘if’, ’for’, ’while’, ’do while’, ‘switch’ statements are also functions prewritten into the library which have been instructed to carry out their specific tasks. You may ask what the point is in writing functions, we could just write the instructions after main() while writing the program. Well yes we could do that but it would make our code look very clumsy! We use functions to make our codes shorter and more legible when the writer and even other programmers look at the code. Once the function has been written, we can call the function multiple times and hence make the code shorter, saves a lot of time than writing the task which the function would do again and again.
-Writing a function
-To write a function, first we need to describe the return value of the function. For example, if we write a function to get the greater value of two numbers, the return value should be an int, float or a double. Let’s do just that then, define a function to get the larger of two numbers. Let’s call the function greater(). We declare the function like this:</p>
+What exactly are functions? Functions are in a way an abbreviated form of a specific task or a lot of tasks. They are given instructions and then given a name. Even the ‘if’, ’for’, ’while’, ’do while’, ‘switch’ statements are also functions prewritten into the library which have been instructed to carry out their specific tasks. You may ask what the point is in writing functions, we could just write the instructions after main() while writing the program. Well yes we could do that but it would make our code look very clumsy! We use functions to make our codes shorter and more legible when the writer and even other programmers look at the code. Once the function has been written, we can call the function multiple times and hence make the code shorter, saves a lot of time than writing the task which the function would do again and again.</p>
+<h2 id="writing-a-function">Writing a function</h2>
+<p>To write a function, first we need to describe the return value of the function. For example, if we write a function to get the greater value of two numbers, the return value should be an int, float or a double. Let’s do just that then, define a function to get the larger of two numbers. Let’s call the function greater(). We declare the function like this:</p>
 <pre><code> int greater();
 </code></pre>
 <p>By doing this we named a function. Now, the function greater will compare two numbers, which means it will be taking two arguments or parameters. An argument is a local variable that gets its value from the code that calls the function. The rest of the code will look something like this:</p>

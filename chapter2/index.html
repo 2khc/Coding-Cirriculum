@@ -247,7 +247,10 @@ argument of the function.</p>
 <pre><code>  scanf("%d", &amp;numberOne);
 </code></pre>
 <p>This takes your input value and assigns it to numberOne, such that numberOne holds whatever whole number you decide to input.</p>
-<p>But wait a second, what is this "%d" that is in both the 'printf' and 'scanf' in the first arguments?</p>
+<p>But wait a second, what is this "%d" that is in both the 'printf' and 'scanf' in the first arguments? This "%d" is a formatter that is applied to the value of the argument
+in the same function. For example, in the above example of scanf, the number input into the terminal is then assigned to the variable 'numberOne'.</p>
+<p>In the printf, 'numberOne' is placed into the first %d, 'numberTwo' is placed into the second %d, the value of the sum of 'numberOne + numberTwo' is placed into the
+3rd %d.</p>
 <p>(some exercise at the end of the chapter)</p></div>
         </div>
 
