@@ -132,6 +132,8 @@
         
             <li><a href="#the-switch-statement">The switch Statement</a></li>
         
+            <li><a href="#exercises-lets-write-another-calculator-using-switch-statements">Exercises: Let's Write Another Calculator Using Switch Statements!</a></li>
+        
     
     </ul>
 </div></div>
@@ -167,39 +169,56 @@
  The code inside the if statement only runs if conditions are met. In this case, if number is less than 5, run the code inside the if statement. As it stands, the value of
  number is 4, which is less than 5, so the code inside the if statement runs!</p>
 <h2 id="the-switch-statement">The switch Statement</h2>
+<p>The switch statement fills a similar role to that of the if statement. It checks for a case and if that case is met, runs the code below it.
+Here's an example:</p>
 <pre><code> switch ( expression ) {
      case value1:
-         programme statement(s);
+      printf("1");
+          break;
+     case value2:
+         printf("2");
          break;
-     case value1:
-         programme statement(s);
-         break;
-     case valueN:
-         programme statement(s);
+     case value3:
+         printf("3");
          break;
      default:
-         programme statement(s);
+         printf("default");
          break;
  }
-
- int main(void)
+</code></pre>
+<p>In the example above, if expression equals to value1, it would print '1', if expression equals to value2, it would print '2'.... You get the picture.</p>
+<h2 id="exercises-lets-write-another-calculator-using-switch-statements">Exercises: Let's Write Another Calculator Using Switch Statements!</h2>
+<p>For this particular calculator, we want to input 2 numbers, then also tell the program what we want to do with those 2 numbers.</p>
+<pre><code> int main(void)
  {
-    int number;
+  int a;
+  int b;
+  char operation;
 
-    scanf("%i", &amp;number);
+  printf("Enter the first number:\n");
+  scanf("%i", &amp;a);
+  printf("Enter the second number:\n");
+  scanf("%i", &amp;b);
+  printf("Enter the operation:\n");
+  scanf("%c", &amp;operation);
 
-    switch (number)
-    {
-        case 0:
-            // something
-            //break;
-        case 1:
-            // something
-            break;
-        default:
-            //something
-            break;
-    }
+  calculate(a,b,operation);
+ }
+
+ int calculate(int a, int b, char operation)
+ {
+   switch (operation)
+   {
+     case 'x':
+        return a * b;
+      case '+':
+        return a + b;
+      case '/':
+        return a / b;
+      default:
+        printf("Operation not recognised");
+        return 666;
+   }
  }
 </code></pre>
 <p>## Exercises</p></div>

@@ -130,11 +130,9 @@
         
             <li><a href="#what-are-functions">What are Functions?</a></li>
         
-            <li><a href="#writing-a-function">Writing a function</a></li>
+            <li><a href="#writing-our-first-function">Writing Our First Function</a></li>
         
             <li><a href="#exercises-lets-write-some-functions">Exercises: Let's Write Some Functions!</a></li>
-        
-            <li><a href="#exercise">Exercise:</a></li>
         
     
     </ul>
@@ -145,7 +143,7 @@
 <h2 id="what-are-functions">What are Functions?</h2>
 <p>All this time, we’ve been using functions to write our codes, such as main() function, printf() function, scanf() function etc. These functions have been pre-written and its instructions given by another programmer. When loading the library at the beginning by using #include<stdio.h>, the compiler or IDE loads these functions including a few more. The computer does not know what a function does unless they are instructed what to do when it is called. Remember, computers are actually very dumb!
 What exactly are functions? Functions are in a way an abbreviated form of a specific task or a lot of tasks. They are given instructions and then given a name. Even the ‘if’, ’for’, ’while’, ’do while’, ‘switch’ statements are also functions prewritten into the library which have been instructed to carry out their specific tasks. You may ask what the point is in writing functions, we could just write the instructions after main() while writing the program. Well yes we could do that but it would make our code look very clumsy! We use functions to make our codes shorter and more legible when the writer and even other programmers look at the code. Once the function has been written, we can call the function multiple times and hence make the code shorter, saves a lot of time than writing the task which the function would do again and again.</p>
-<h2 id="writing-a-function">Writing a function</h2>
+<h2 id="writing-our-first-function">Writing Our First Function</h2>
 <p>To write a function, first we need to describe the return value of the function. For example, if we write a function to get the greater value of two numbers, the return value should be an int, float or a double. Let’s do just that then, define a function to get the larger of two numbers. Let’s call the function greater(). We declare the function like this:</p>
 <pre><code> int greater();
 </code></pre>
@@ -155,15 +153,15 @@ What exactly are functions? Functions are in a way an abbreviated form of a spec
     if (a &gt; b)
     {
         return a;
-        return b;
     }
+    return b;
  }
 </code></pre>
-<p>This describes a function to get greater of two numbers, a and b -&gt; the two arguments. As you can see, the argument type also has to be declared in the function. After the curly braces, the instruction of the function is given, to compare the value of a and b then return whichever is greater to the main function after it is called.
+<p>This describes a function to get greater of two numbers, a and b  -&gt; the two arguments. As you can see, the argument type also has to be declared in the function. After the curly braces, the instruction of the function is given, to compare the value of a and b then return whichever is greater to the main function after it is called.
 The greater function can be used like this:</p>
 <pre><code> int main()
  {
-    int ans = greater(a , b );
+    int ans = greater( a , b );
     printf("%d", ans);
     return 0;
  }
@@ -178,7 +176,8 @@ The greater function can be used like this:</p>
 </code></pre>
 <p>The code above is an example of a void function. When the show_off function is called, it prints the statement to the terminal instead of returning a value to the main function.</p>
 <h2 id="exercises-lets-write-some-functions">Exercises: Let's Write Some Functions!</h2>
-<h3 id="firstly-prepare-the-file">Firstly, Prepare the file</h3>
+<p>Let's see if you can write some functions for addition, subtraction, division and multiplication. First try doing them yourself and then see the following examples.</p>
+<h3 id="firstly-prepare-the-file-with-the-following-code">Firstly, Prepare the file with the following code</h3>
 <pre><code> #include &lt;stdio.h&gt;
 
  int main(void)
@@ -186,30 +185,196 @@ The greater function can be used like this:</p>
 
  }
 </code></pre>
-<h3 id="writing-our-first-function">Writing Our First Function</h3>
+<h3 id="writing-an-addition-function">Writing an Addition function</h3>
 <p>Below the 'main' block, we can write a function called addition like so:</p>
+<pre><code> int add(int a, int b)
+ {
+   int c;
+
+  c = a + b;
+  return c;
+
+ }
+</code></pre>
+<p>Like shown in the first example with the greater functioin, we can then save the file with the following code and then compile:</p>
 <pre><code> #include &lt;stdio.h&gt;
 
  int main(void)
  {
 
+  int ans = add(20, 8);
+  printf("The answer is %d", ans);
+
  }
 
- int addition(int a, int b)
+ int add(int a, int b)
  {
-   // code here
+   int c;
+
+  c = a + b;
+  return c;
+
  }
 </code></pre>
-<h2 id="exercise">Exercise:</h2>
-<ol>
-<li>Write a function for:</li>
-<li>Adding two numbers</li>
-<li>Subtracting two numbers</li>
-<li>Dividing two numbers</li>
-<li>Multiplying two numbers</li>
-<li>Use the functions created to make a calculator in the terminal. (Hint: use conditional statements)</li>
-</ol>
-<h3 id="suggested-solution">Suggested solution:</h3></div>
+<p>This will give you the answer in the terminal.</p>
+<p>Following the previous function, functions of subtraction, division and multiplication can also be written like this:</p>
+<h3 id="subtraction-function">Subtraction Function</h3>
+<pre><code> int subtract(int a, int b)
+ {
+   int c;
+
+  c = a - b;
+  return c;
+
+ }
+</code></pre>
+<h3 id="division-function">Division function</h3>
+<pre><code> int divide(int a, int b)
+ {
+   int c;
+
+  c = a/b;
+  return c;
+
+ }
+</code></pre>
+<h3 id="multiplication-function">Multiplication Function</h3>
+<pre><code> int Multiply(int a, int b)
+ {
+   int c;
+
+  c = a*b;
+  return c;
+
+ }
+</code></pre>
+<p>All these functions can be saved in a .c file like shown in the addition function and the answer will be printed on the terminal.</p>
+<h3 id="now-you-know-how-to-make-basic-functions">Now you know how to make basic functions!</h3>
+<h3 id="lets-use-the-function-we-wrote-to-make-a-calculator-in-the-terminal">Let’s use the function we wrote to make a calculator in the Terminal.</h3>
+<p>Again see if you can make one by yourself because the more you make your own programs, the better programmer you will become!</p>
+<p>Well a soltion for the calculator is given below. We can write the 'main' block of the code like this:</p>
+<pre><code> main()
+ {
+  int a, b, ans, n;
+
+  printf ("MENU: \n Press '1' For ''Addition'' \n Press '2' For ''Subtraction''\n Press '3' For ''Division''\n Press '4' For ''Multiplication'' \n ");
+
+  printf("Enter your Choice\n");
+
+  scanf("%d", &amp;n);
+
+  if(n==1 || n==2 || n==3 || n==4)
+  {
+        printf("Write two numbers and press enter");
+        scanf("%d %d", &amp;a, &amp;b);
+
+        switch(n)
+        {
+               case 1:
+                    ans=add(a, b);
+                    break;
+               case 2:
+                    ans=subtract(a, b);
+                    break;
+               case 3:
+                    ans=divide(a, b);
+                    break;
+               case 4:
+                    ans=multiply(a, b);
+        }
+
+   printf(" The Result is = %d\n", ans);
+
+  }
+  else
+  {
+       printf("Error, that is an invalid choice, please choose from 1-4.\n");
+  }
+</code></pre>
+<p>}</p>
+<p>As you can see, we used two different types of condition statements, the if and else statement so the right choice from 1-4 would be made. Any other number would give the error message. Then we used the switch statement to define the case of each function depending on the choice made and thus the function is called and the answer is printed. The final code might look like this.</p>
+<pre><code> #include&lt;stdio.h&gt;
+
+
+ main()
+ {
+  int a, b, ans, n;
+
+  printf ("MENU: \n Press '1' For ''Addition'' \n Press '2' For ''Subtraction''\n Press '3' For ''Division''\n Press '4' For ''Multiplication'' \n ");
+
+  printf("Enter your Choice\n");
+
+  scanf("%d", &amp;n);
+
+  if(n==1 || n==2 || n==3 || n==4)
+  {
+        printf("Write two numbers and press enter");
+        scanf("%d %d", &amp;a, &amp;b);
+
+        switch(n)
+        {
+               case 1:
+                    ans=add(a, b);
+                    break;
+               case 2:
+                    ans=subtract(a, b);
+                    break;
+               case 3:
+                    ans=divide(a, b);
+                    break;
+               case 4:
+                    ans=multiply(a, b);
+        }
+
+   printf(" The Result is = %d\n", ans);
+
+  }
+  else
+  {
+       printf("Error, that is an invalid choice, please choose from 1-4.\n");
+  }
+
+
+ }
+
+ int add(int a, int b)
+ {
+   int c;
+
+  c = a + b;
+  return c;
+
+ }
+
+
+
+ int subtract(int a, int b)
+ {
+   int c;
+
+  c = a - b;
+  return c;
+
+ }
+
+ int divide(int a, int b)
+ {
+   int c;
+
+  c = a/b;
+  return c;
+
+ }
+
+ int multiply(int a, int b)
+ {
+   int c;
+
+  c = a*b;
+  return c;
+
+ }
+</code></pre></div>
         </div>
 
         <footer class="col-md-12">
