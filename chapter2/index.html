@@ -136,6 +136,8 @@
         
             <li><a href="#arithmetic-expressions">Arithmetic Expressions</a></li>
         
+            <li><a href="#a-few-extra-operations-to-consider">A Few Extra Operations to consider</a></li>
+        
             <li><a href="#exercises-lets-write-a-basic-calculator">Exercises: Let's Write a Basic Calculator!</a></li>
         
             <li><a href="#challenges">Challenges</a></li>
@@ -208,7 +210,7 @@ Variable names can’t be those that are same to reserved words in C e.g. int, f
 $ is not a valid character.</p>
 <p>Although we cannot include any spaces in our variable names, programmers tend to use underscores( _ ) or uppercase letters to represent next words.</p>
 <pre><code> calculate_angle
- isBlack
+ isTrue
 </code></pre>
 <h2 id="arithmetic-expressions">Arithmetic Expressions</h2>
 <p>C’s arithmetic expressions work pretty much the same way as those we use in the real-world. However, some of the maths rules might not be as you expect depending on the type that a variable is declared to be.</p>
@@ -218,7 +220,24 @@ $ is not a valid character.</p>
 division sign -&gt; ( / )
 plus sign -&gt; ( + )
 minus sign -&gt; ( - )</p>
-<p>(include some codes as examples showing different operations)</p>
+<h2 id="a-few-extra-operations-to-consider">A Few Extra Operations to consider</h2>
+<p>When you have an 'integer' variable, you can increment its value as follows:</p>
+<pre><code> int number = 1;
+ number = number + 1;
+</code></pre>
+<p>This would cause the value of number to increment by 1, as say the new value of number is the current value plus 1. This is often represented in short-form
+like so:</p>
+<pre><code> number++;
+</code></pre>
+<p>This is basically identical to 'number = number + 1;'. How about if you wish to increment by more than 1?</p>
+<pre><code> number += 2;
+</code></pre>
+<p>Using '+=', we can cause an increment of +2, or whatever value we choose.</p>
+<p>Finally, all all these work with decrementing values if we replace the '+' with a '-', pretty neat?</p>
+<pre><code> number--;
+ number -= 2;
+</code></pre>
+<p>Programmers like to be lazy, this is just one of the many ways they chose to be so.</p>
 <h2 id="exercises-lets-write-a-basic-calculator">Exercises: Let's Write a Basic Calculator!</h2>
 <p>The first thing we need to do is prepare to prepare the file for use. We are going to be displaying things on the terminal, and asking for input, so we'll need to
 include the 'stdio' library.</p>
