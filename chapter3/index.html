@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        
+        <link rel="canonical" href="http://2khc.github.io/coding-curriculum/chapter3/">
         <link rel="shortcut icon" href="../img/favicon.ico">
 
 	<title>Chapter 3 - C-alculator</title>
@@ -128,7 +128,9 @@
     
         <li class="main active"><a href="#chapter-6-arrays">Chapter 6: Arrays</a></li>
         
-            <li><a href="#defining-an-array">Defining an array</a></li>
+            <li><a href="#what-is-an-array">What is an Array?</a></li>
+        
+            <li><a href="#defining-an-array">Defining an Array</a></li>
         
             <li><a href="#initialising-arrays">Initialising Arrays</a></li>
         
@@ -136,14 +138,19 @@
         
             <li><a href="#exercises">Exercises</a></li>
         
+            <li><a href="#challenges">Challenges:</a></li>
+        
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
 <h1 id="chapter-6-arrays">Chapter 6: Arrays</h1>
-<p>C provides a capability that enables you to define a set of ordered data items known as an array. This chapter will teach you how arrays can be used and manipulated</p>
-<h2 id="defining-an-array">Defining an array</h2>
+<p>C provides a capability that enables you to define a set of ordered data items known as an array. This chapter will teach you how arrays can be used and manipulated.</p>
+<h2 id="what-is-an-array">What is an Array?</h2>
+<p>An array is a type of data-structure that holds an ordered set of data all of the same type. The size of the array is predetermined, so if one were to
+declare an array of size 5, the maximum number of values it could ever hold would be 5, and no greater.</p>
+<h2 id="defining-an-array">Defining an Array</h2>
 <p>To name an array the same rules you use for naming a variable are applied. At the end of an array’s name, the number inside a pair of square brackets implies the capacity of that particular array. For example, “int people[4]” contains the maximum number of four data items.</p>
 <h2 id="initialising-arrays">Initialising Arrays</h2>
 <p>The way you initialise values to an array is pretty similar to how you do it with variables except that you only assign one value to a variable.</p>
@@ -154,7 +161,6 @@
 </code></pre>
 <h2 id="get-an-access-to-arrays">Get an access to arrays</h2>
 <p>Array[n] is indexed from 0 to n-1. So you can get an access to a particular index using array[n] given that n is the index number whose stored valued is required.</p>
-<p>(code sample demonstrating everything covered)</p>
 <h2 id="exercises">Exercises</h2>
 <ol>
 <li>Define an array of size 5, holding the following elements: 2 15 32 37 48</li>
@@ -165,10 +171,12 @@
 <li>Assign the values 51 and 66 to the fourth and fifth elements of each array respectively.</li>
 <li>Again, add them together. Implement your revision of array indexing from questions 4 and 5</li>
 </ol>
-<p>HARDER QUESTIONS:
-8. Use a For Loop, to add together all the elements in the second array. Store the answer in an integer named total.
-9. Use a While Loop, to add together all the elements in the first array. Store the answer in an integer named secondTotal
-Challenge: Make two arrays of numbers, both 5 elements in length. Then, have your program add together the products of each pair of corresponding numbers. However, there is a catch! You cannot do this manually, by typing out all the maths yourself. Rather, you have to use one of the three kinds of loops available to you.</p></div>
+<h2 id="challenges">Challenges:</h2>
+<ol>
+<li>Use a For Loop, to add together all the elements in the second array. Store the answer in an integer named total.</li>
+<li>Use a While Loop, to add together all the elements in the first array. Store the answer in an integer named secondTotal
+Challenge: Make two arrays of numbers, both 5 elements in length. Then, have your program add together the products of each pair of corresponding numbers. However, there is a catch! You cannot do this manually, by typing out all the maths yourself. Rather, you have to use one of the three kinds of loops available to you.</li>
+</ol></div>
         </div>
 
         <footer class="col-md-12">

@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        
+        <link rel="canonical" href="http://2khc.github.io/coding-curriculum/chapter5/">
         <link rel="shortcut icon" href="../img/favicon.ico">
 
 	<title>Chapter 5 - C-alculator</title>
@@ -126,101 +126,112 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#chapter-5-making-decisions">Chapter 5: Making Decisions</a></li>
+        <li class="main active"><a href="#chapter-5-program-looping">Chapter 5: Program Looping</a></li>
         
-            <li><a href="#the-if-statement">The if Statement</a></li>
+            <li><a href="#the-for-loop">The for Loop</a></li>
         
-            <li><a href="#the-switch-statement">The switch Statement</a></li>
+            <li><a href="#the-while-loop">The while Loop</a></li>
         
-            <li><a href="#exercises-lets-write-another-calculator-using-switch-statements">Exercises: Let's Write Another Calculator Using Switch Statements!</a></li>
+            <li><a href="#the-do-loop">The do Loop</a></li>
+        
+            <li><a href="#challenges">Challenges</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="chapter-5-making-decisions">Chapter 5: Making Decisions</h1>
-<p>You saw how decision-making powers were used in Chapter 4 with loops. Without such capabilities those loops we saw in the previous chapter would end up execute the same sequence of statements over and over again.</p>
-<h2 id="the-if-statement">The if Statement</h2>
-<p>C provides a general decision-making capability in the form of a language construct known as the if statement.</p>
-<pre><code> if ( expression )
- {
-     programme statement(s);
+<h1 id="chapter-5-program-looping">Chapter 5: Program Looping</h1>
+<p>One of the great capabilities of computers is their power to perform repeated calculations. This chapter will help you understand some constructs designed to do just that.</p>
+<h2 id="the-for-loop">The for Loop</h2>
+<p>The for statement or for loop is one of the most frequently used statement. It allows you to do repeated calculations with a starting value until a condition is not satisfied.</p>
+<pre><code> for ( initial_expression; loop_condition; loop_expression ) {
+      program statement(s);
  }
 </code></pre>
-<p>To simplify things a little, we can think of this as a normal English sentence such as “ If it rains, you will get wet and sick”. A C version of this would be:</p>
-<pre><code> if ( it rains ) {
-     you will get wet;
-     you will get sick;
- }
-</code></pre>
-<p>( code as examples )</p>
-<pre><code> int main(void)
+<p>initial_expression; used to set up the value before a loop begins
+loop_condition; looping continues as long as this loop condition is satisfied
+loop_expression; contains an expression that is evaluated each time after the body of the loop is            executed</p>
+<p>For example</p>
+<pre><code> #include &lt;stdio.h&gt;
+
+ int main(void)
  {
-    int number = 4;
-
-    if ( number &lt; 5 )
-    {
-        printf("number is less than 5\n");
-    }
- }
-</code></pre>
-<p>In the example above, we have code that first initialises an integer called 'number' to the value of 4. We then begin the if statement, and create a condition to check for.
- The code inside the if statement only runs if conditions are met. In this case, if number is less than 5, run the code inside the if statement. As it stands, the value of
- number is 4, which is less than 5, so the code inside the if statement runs!</p>
-<h2 id="the-switch-statement">The switch Statement</h2>
-<p>The switch statement fills a similar role to that of the if statement. It checks for a case and if that case is met, runs the code below it.
-Here's an example:</p>
-<pre><code> switch ( expression ) {
-     case value1:
-      printf("1");
-          break;
-     case value2:
-         printf("2");
-         break;
-     case value3:
-         printf("3");
-         break;
-     default:
-         printf("default");
-         break;
- }
-</code></pre>
-<p>In the example above, if expression equals to value1, it would print '1', if expression equals to value2, it would print '2'.... You get the picture.</p>
-<h2 id="exercises-lets-write-another-calculator-using-switch-statements">Exercises: Let's Write Another Calculator Using Switch Statements!</h2>
-<p>For this particular calculator, we want to input 2 numbers, then also tell the program what we want to do with those 2 numbers.</p>
-<pre><code> int main(void)
- {
-  int a;
-  int b;
-  char operation;
-
-  printf("Enter the first number:\n");
-  scanf("%i", &amp;a);
-  printf("Enter the second number:\n");
-  scanf("%i", &amp;b);
-  printf("Enter the operation:\n");
-  scanf("%c", &amp;operation);
-
-  calculate(a,b,operation);
- }
-
- int calculate(int a, int b, char operation)
- {
-   switch (operation)
+   int count = 0;
+   int i;
+   for (i = 0 ; i &lt; 5; i++)
    {
-     case 'x':
-        return a * b;
-      case '+':
-        return a + b;
-      case '/':
-        return a / b;
-      default:
-        printf("Operation not recognised");
-        return 666;
+     count = count + i;
    }
  }
-</code></pre></div>
+</code></pre>
+<h2 id="the-while-loop">The while Loop</h2>
+<p>The while loop is another frequently used statement which has the syntax as follows.</p>
+<pre><code> while ( expression ) {
+     program statement(s);
+ }
+</code></pre>
+<p>The expression in the parentheses is evaluated; if it is evaluated to be true, the statements within the square brackets are then executed. As soon as the expression is evaluated false, the program will exit from the loop.</p>
+<p>( code samples )</p>
+<h2 id="the-do-loop">The do Loop</h2>
+<p>This statement is fairly similar to the while statement except that the body of the do loop is executed at least once.</p>
+<pre><code> do
+ {
+     // something
+ }
+ while ( loop_expression );
+</code></pre>
+<p>Before entering the while loop, the program will first execute the statements just below “do”.</p>
+<p>( code samples )</p>
+<h3 id="the-break-statement">The break statement</h3>
+<p>Sometimes it is need to immediately exit the loop at a certain point. This can be done using the break statement.</p>
+<pre><code> int main(void)
+ {
+    int i;
+
+    for (i = 0; i &lt; 10; i++)
+    {
+      if (i == 5)
+      {
+        break;
+      }
+    }
+    printf("%d\n", i);
+ }
+</code></pre>
+<p>In this example, the for loop keeps looping and incrementing the value of 'i', but once 'i' equals to 5, it meets the condition in the if statement,
+and finds a 'break', this exits the entire loop and the for loop is concluded and 'i' never reaches 6 (or any number beyond).</p>
+<p>An important point to note is that 'break' can be used to exit any type of loop, such as 'while' and 'do' loops.</p>
+<h3 id="the-continue-statement">The continue statement</h3>
+<p>The continue statement is similar the beak statement except it cause the current iteration to terminate. To be more precise, it causes the loop to continue.</p>
+<pre><code>  int main(void)
+  {
+     int i = 0;
+
+     while (i &lt; 5)
+     {
+       if ( i == 3)
+       {
+         i++;
+         continue;
+       }
+       printf("%d\n", i);
+       i++;
+     }
+  }
+</code></pre>
+<p>In this while loop, the program would print out the value of 'i' each iteration, but once 'i' equals to 3, it will increment 'i' but then hit the 'continue'.
+This causes it to exit the current iteration of the while loop, ignoring the rest of the code below the continue, and skip to the next iteration where 'i'
+equals to 4. The console would print out:</p>
+<pre><code> 0
+ 1
+ 2
+ 4
+</code></pre>
+<p>The 3 would be skipped.</p>
+<h2 id="challenges">Challenges</h2>
+<p><strong>1.</strong> By using a for Statement, write a program that calculates the sum of the first 20 positive integers(1-20).</p>
+<p><strong>2.</strong> By using a do Statement, write a program that reverses any entered numbers.</p></div>
         </div>
 
         <footer class="col-md-12">
