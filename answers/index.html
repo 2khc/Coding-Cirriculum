@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../img/favicon.ico">
 
-	<title>Chapter 5 - C-alculator</title>
+	<title>Answers - C-alculator</title>
 
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -80,8 +80,8 @@
             
             
             
-                <li class="active">
-                    <a href="./">Chapter 5</a>
+                <li >
+                    <a href="../chapter5/">Chapter 5</a>
                 </li>
             
             
@@ -92,8 +92,8 @@
             
             
             
-                <li >
-                    <a href="../answers/">Answers</a>
+                <li class="active">
+                    <a href="./">Answers</a>
                 </li>
             
             
@@ -119,12 +119,12 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="next" href="../chapter4/">
+                    <a rel="next" href="../chapter6/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../chapter6/">
+                    <a rel="prev" href="../the-end/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -138,112 +138,135 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#chapter-5-program-looping">Chapter 5: Program Looping</a></li>
+        <li class="main active"><a href="#arrays">Arrays</a></li>
         
-            <li><a href="#the-for-loop">The for Loop</a></li>
+    
+        <li class="main "><a href="#making-decisions-1">Making Decisions 1</a></li>
         
-            <li><a href="#the-while-loop">The while Loop</a></li>
+    
+        <li class="main "><a href="#making-decisions-2">Making Decisions 2</a></li>
         
-            <li><a href="#the-do-loop">The do Loop</a></li>
+    
+        <li class="main "><a href="#looping">Looping</a></li>
         
-            <li><a href="#challenges">Challenges</a></li>
+    
+        <li class="main "><a href="#include">include </a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="chapter-5-program-looping">Chapter 5: Program Looping</h1>
-<p>One of the great capabilities of computers is their power to perform repeated calculations. This chapter will help you understand some constructs designed to do just that.</p>
-<h2 id="the-for-loop">The for Loop</h2>
-<p>The for statement or for loop is one of the most frequently used statement. It allows you to do repeated calculations with a starting value until a condition is not satisfied.</p>
-<pre><code> for ( initial_expression; loop_condition; loop_expression ) {
-      program statement(s);
- }
-</code></pre>
-<p>initial_expression; used to set up the value before a loop begins
-loop_condition; looping continues as long as this loop condition is satisfied
-loop_expression; contains an expression that is evaluated each time after the body of the loop is            executed</p>
-<p>For example</p>
-<pre><code> #include &lt;stdio.h&gt;
+<h2 id="arrays">Arrays</h2>
+<pre><code>  #include &lt;stdio.h&gt;
 
- int main(void)
- {
-   int count = 0;
-   int i;
-   for (i = 0 ; i &lt; 5; i++)
-   {
-     count = count + i;
-   }
- }
-</code></pre>
-<h2 id="the-while-loop">The while Loop</h2>
-<p>The while loop is another frequently used statement which has the syntax as follows.</p>
-<pre><code> while ( expression ) {
-     program statement(s);
- }
-</code></pre>
-<p>The expression in the parentheses is evaluated; if it is evaluated to be true, the statements within the square brackets are then executed. As soon as the expression is evaluated false, the program will exit from the loop.</p>
-<p>( code samples )</p>
-<h2 id="the-do-loop">The do Loop</h2>
-<p>This statement is fairly similar to the while statement except that the body of the do loop is executed at least once.</p>
-<pre><code> do
- {
-     // something
- }
- while ( loop_expression );
-</code></pre>
-<p>Before entering the while loop, the program will first execute the statements just below “do”.</p>
-<p>( code samples )</p>
-<h3 id="the-break-statement">The break statement</h3>
-<p>Sometimes it is need to immediately exit the loop at a certain point. This can be done using the break statement.</p>
-<pre><code> int main(void)
- {
-    int i;
+  int main (void) {
+      float numbers[15];
+      printf("Enter 15 floating-point values.");
 
-    for (i = 0; i &lt; 10; i++)
-    {
-      if (i == 5)
-      {
-        break;
-      }
-    }
-    printf("%d\n", i);
- }
-</code></pre>
-<p>In this example, the for loop keeps looping and incrementing the value of 'i', but once 'i' equals to 5, it meets the condition in the if statement,
-and finds a 'break', this exits the entire loop and the for loop is concluded and 'i' never reaches 6 (or any number beyond).</p>
-<p>An important point to note is that 'break' can be used to exit any type of loop, such as 'while' and 'do' loops.</p>
-<h3 id="the-continue-statement">The continue statement</h3>
-<p>The continue statement is similar the beak statement except it cause the current iteration to terminate. To be more precise, it causes the loop to continue.</p>
-<pre><code>  int main(void)
-  {
-     int i = 0;
+      for(int i=0; i&lt;15; ++i)
+      scanf("%f", &amp;numbers[i]); //store all the entered floating-point values into an array
 
-     while (i &lt; 5)
-     {
-       if ( i == 3)
-       {
-         i++;
-         continue;
-       }
-       printf("%d\n", i);
-       i++;
-     }
+      float sum;
+
+      for(int j=0; j&lt;15; ++j)
+      sum += numbers[j];
+
+      printf("The sum of an array of 15 floating-point values is %f", sum);
+
+      return 0;
   }
 </code></pre>
-<p>In this while loop, the program would print out the value of 'i' each iteration, but once 'i' equals to 3, it will increment 'i' but then hit the 'continue'.
-This causes it to exit the current iteration of the while loop, ignoring the rest of the code below the continue, and skip to the next iteration where 'i'
-equals to 4. The console would print out:</p>
-<pre><code> 0
- 1
- 2
- 4
+<h2 id="making-decisions-1">Making Decisions 1</h2>
+<pre><code> #include &lt;stdio.h&gt;
+
+ int main (void) {
+     float value1, value2;
+     char operator;
+
+     printf("Type in your expression.\n");
+     scanf("%f %c %f", &amp;value1, &amp;operator, &amp;value2);
+
+     if (operator == '+')
+         printf("%.2f\n", value1 + value2);
+
+     else if (operator == '-')
+         printf("%.2f\n", value1 - value2);
+
+     else if (operator == '*')
+         printf("%.2f\n", value1 * value2);
+
+     else if (operator == '/')
+         if (value2 == 0)
+             printf("Division by zero.\n");
+         else
+             printf("%.2f\n", value1 / value2);
+
+     else
+         printf("Unknown operator.\n"); //in case an unknown operator is typed in.
+
+     return 0;
+
+ }
 </code></pre>
-<p>The 3 would be skipped.</p>
-<h2 id="challenges">Challenges</h2>
-<p><strong>1.</strong> By using a for Statement, write a program that calculates the sum of the first 20 positive integers(1-20).</p>
-<p><strong>2.</strong> By using a do Statement, write a program that reverses any entered numbers.</p></div>
+<h2 id="making-decisions-2">Making Decisions 2</h2>
+<pre><code> #include &lt;stdio.h&gt;
+
+ int main (void) {
+     float value1, value2;
+     char operator;
+
+     printf("Type in your expression.\n");
+     scanf("%f %c %f", &amp;value1, &amp;operator, &amp;value2);
+
+     switch (operator) {
+         case '+':
+             printf("%.2f\n", value1 + value2);
+             break;
+
+         case '-':
+             printf("%.2f\n", value1 - value2);
+             break;
+
+         case '*':
+             printf("%.2f\n", value1 * value2);
+             break;
+
+         case '/':
+             if (value2 == 0)
+                 printf("Division by zero.\n");
+             else
+                 printf("%.2f\n", value1 / value2);
+             break;
+
+         default:
+             printf("Unknown operator.\n");
+             break;
+     }
+
+     return 0;
+
+ }
+</code></pre>
+<h2 id="looping">Looping</h2>
+<h1 id="include">include <stdio.h></h1>
+<p>int main (void) {
+    int number, digit;</p>
+<pre><code>printf ("Enter your number.\n");
+scanf ("%i", &amp;number);
+
+do {
+    digit = number % 10;
+    printf("%i", digit);
+    number = number / 10;
+}
+while (number != 0);
+
+printf("\n");
+
+return 0;
+</code></pre>
+<p>}</p></div>
         </div>
 
         <footer class="col-md-12">
