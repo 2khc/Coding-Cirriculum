@@ -8,7 +8,7 @@
   
   
   
-  <title>Chapter 3 - C-alculator</title>
+  <title>Chapter 3 - Arrays - C-alculator</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -23,7 +23,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Chapter 3";
+    var mkdocs_page_name = "Chapter 3 - Arrays";
     var mkdocs_page_input_path = "chapter3.md";
     var mkdocs_page_url = "/chapter3/";
   </script>
@@ -63,25 +63,25 @@
           
             <li>
     <li class="toctree-l1 ">
-        <a class="" href="../chapter1/">Chapter 1</a>
+        <a class="" href="../chapter1/">Chapter 1 - Getting Started</a>
         
     </li>
 <li>
           
             <li>
     <li class="toctree-l1 ">
-        <a class="" href="../chapter2/">Chapter 2</a>
+        <a class="" href="../chapter2/">Chapter 2 - Programming Basics</a>
         
     </li>
 <li>
           
             <li>
     <li class="toctree-l1 current">
-        <a class="current" href="./">Chapter 3</a>
+        <a class="current" href="./">Chapter 3 - Arrays</a>
         
             <ul>
             
-                <li class="toctree-l3"><a href="#chapter-6-arrays">Chapter 6: Arrays</a></li>
+                <li class="toctree-l3"><a href="#arrays">Arrays</a></li>
                 
                     <li><a class="toctree-l4" href="#what-is-an-array">What is an Array?</a></li>
                 
@@ -93,7 +93,7 @@
                 
                     <li><a class="toctree-l4" href="#exercises">Exercises</a></li>
                 
-                    <li><a class="toctree-l4" href="#challenges">Challenges:</a></li>
+                    <li><a class="toctree-l4" href="#challenges">Challenges</a></li>
                 
             
             </ul>
@@ -103,21 +103,21 @@
           
             <li>
     <li class="toctree-l1 ">
-        <a class="" href="../chapter4/">Chapter 4</a>
+        <a class="" href="../chapter4/">Chapter 4 - Making Decisions</a>
         
     </li>
 <li>
           
             <li>
     <li class="toctree-l1 ">
-        <a class="" href="../chapter5/">Chapter 5</a>
+        <a class="" href="../chapter5/">Chapter 5 - Program Looping</a>
         
     </li>
 <li>
           
             <li>
     <li class="toctree-l1 ">
-        <a class="" href="../chapter6/">Chapter 6</a>
+        <a class="" href="../chapter6/">Chapter 6 - Functions</a>
         
     </li>
 <li>
@@ -165,7 +165,7 @@
     
       
     
-    <li>Chapter 3</li>
+    <li>Chapter 3 - Arrays</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -175,7 +175,7 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="chapter-6-arrays">Chapter 6: Arrays</h1>
+                <h1 id="arrays">Arrays</h1>
 <p>C provides a capability that enables you to define a set of ordered data items known as an array. This chapter will teach you how arrays can be used and manipulated.</p>
 <h2 id="what-is-an-array">What is an Array?</h2>
 <p>An array is a type of data-structure that holds an ordered set of data all of the same type. The size of the array is predetermined, so if one were to
@@ -201,11 +201,48 @@ declare an array of size 5, the maximum number of values it could ever hold woul
 <li>Assign the values 51 and 66 to the fourth and fifth elements of each array respectively.</li>
 <li>Again, add them together. Implement your revision of array indexing from questions 4 and 5</li>
 </ol>
-<h2 id="challenges">Challenges:</h2>
+<h2 id="challenges">Challenges</h2>
 <ol>
-<li>Use a For Loop, to add together all the elements in the second array. Store the answer in an integer named total.</li>
-<li>Use a While Loop, to add together all the elements in the first array. Store the answer in an integer named secondTotal
-Challenge: Make two arrays of numbers, both 5 elements in length. Then, have your program add together the products of each pair of corresponding numbers. However, there is a catch! You cannot do this manually, by typing out all the maths yourself. Rather, you have to use one of the three kinds of loops available to you.</li>
+<li>
+<p>Write a program that works out the sum of an array of 15 floating-point values.</p>
+</li>
+<li>
+<p>What output would you expect from the following program?</p>
+<pre><code>#include &lt;stdio.h&gt;
+
+int main (void) {
+  new_array[10] = { 0, 1, 4, 9, 16};
+
+  for (int i = 5; i &lt; 10; ++i)
+  new_array[i] = i * i;
+
+  for (i = 0; i &lt; 10; ++i)
+  printf("new_array[%i] = %i\n", i, new_array[i]);
+
+  return 0;
+}
+</code></pre>
+</li>
+<li>
+<p>Write a program that works out the sum of an array of 15 floating-point values.</p>
+</li>
+<li>
+<p>What output would you expect from the following program?</p>
+<pre><code>#include &lt;stdio.h&gt;
+
+int main (void) {
+    new_array[10] = { 0, 1, 4, 9, 16};
+
+    for (int i = 5; i &lt; 10; ++i)
+        new_array[i] = i * i;
+
+    for (i = 0; i &lt; 10; ++i)
+        printf("new_array[%i] = %i\n", i, new_array[i]);
+
+    return 0;
+}
+</code></pre>
+</li>
 </ol>
               
             </div>
@@ -214,10 +251,10 @@ Challenge: Make two arrays of numbers, both 5 elements in length. Then, have you
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../chapter4/" class="btn btn-neutral float-right" title="Chapter 4">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../chapter4/" class="btn btn-neutral float-right" title="Chapter 4 - Making Decisions">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../chapter2/" class="btn btn-neutral" title="Chapter 2"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../chapter2/" class="btn btn-neutral" title="Chapter 2 - Programming Basics"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
