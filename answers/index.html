@@ -117,10 +117,7 @@
                 <li class="toctree-l3"><a href="#chapter-3-arrays">Chapter 3: Arrays</a></li>
                 
             
-                <li class="toctree-l3"><a href="#making-decisions-1">Making Decisions 1</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#making-decisions-2">Making Decisions 2</a></li>
+                <li class="toctree-l3"><a href="#making-decisions">Making Decisions</a></li>
                 
             
                 <li class="toctree-l3"><a href="#looping">Looping</a></li>
@@ -184,16 +181,16 @@
 
  int main (void) {
      // \n simply tells the program to start a new line.
-    printf("main() is where program execution begins.\n"); // \n simply tells the programme to start a new line.
+    printf("main() is where program execution begins.\n"); // \n simply tells the program to start a new line.
     printf("All program statements must be terminated by a semicolon.\n");
 
     return 0;
  }
 </code></pre>
 <p><strong>2.</strong></p>
-<pre><code> intVar / 3 = 15
- boolVar = 0
- charVar = s
+<pre><code> myInt / 3 = 15
+ myBoolean = 0
+ myCharacter = s
 </code></pre>
 <h2 id="chapter-3-arrays">Chapter 3: Arrays</h2>
 <pre><code>  #include &lt;stdio.h&gt;
@@ -215,76 +212,47 @@
       return 0;
   }
 </code></pre>
-<h2 id="making-decisions-1">Making Decisions 1</h2>
-<pre><code> #include &lt;stdio.h&gt;
+<h2 id="making-decisions">Making Decisions</h2>
+<pre><code>  #include &lt;stdio.h&gt;
 
- int main (void) {
-     float value1, value2;
-     char operator;
+  int main (void)
+  {
+      float value1, value2;
+      char operation;
 
-     printf("Type in your expression.\n");
-     scanf("%f %c %f", &amp;value1, &amp;operator, &amp;value2);
+      printf("Type in your expression.\n");
+      scanf("%f %c %f", &amp;value1, &amp;operation, &amp;value2);
 
-     if (operator == '+')
-         printf("%.2f\n", value1 + value2);
+      if (operation == '+')
+      {
+          printf("%.2f\n", value1 + value2);  
+      }
+      else if (operation == '-')
+      {
+          printf("%.2f\n", value1 - value2);  
+      }
+      else if (operation == '*')
+      {
+           printf("%.2f\n", value1 * value2);
+      }
+      else if (operation == '/')
+      {
+          if (value2 == 0)
+          {
+            printf("Division by zero.\n");            
+          }
+          else
+          {
+          printf("%.2f\n", value1 / value2);
+          }          
+      }         
+      else
+      {
+          printf("Unknown operation.\n"); //in case an unknown operation is typed in.");
+      }
 
-     else if (operator == '-')
-         printf("%.2f\n", value1 - value2);
-
-     else if (operator == '*')
-         printf("%.2f\n", value1 * value2);
-
-     else if (operator == '/')
-         if (value2 == 0)
-             printf("Division by zero.\n");
-         else
-             printf("%.2f\n", value1 / value2);
-
-     else
-         printf("Unknown operator.\n"); //in case an unknown operator is typed in.
-
-     return 0;
-
- }
-</code></pre>
-<h2 id="making-decisions-2">Making Decisions 2</h2>
-<pre><code> #include &lt;stdio.h&gt;
-
- int main (void) {
-     float value1, value2;
-     char operator;
-
-     printf("Type in your expression.\n");
-     scanf("%f %c %f", &amp;value1, &amp;operator, &amp;value2);
-
-     switch (operator) {
-         case '+':
-             printf("%.2f\n", value1 + value2);
-             break;
-
-         case '-':
-             printf("%.2f\n", value1 - value2);
-             break;
-
-         case '*':
-             printf("%.2f\n", value1 * value2);
-             break;
-
-         case '/':
-             if (value2 == 0)
-                 printf("Division by zero.\n");
-             else
-                 printf("%.2f\n", value1 / value2);
-             break;
-
-         default:
-             printf("Unknown operator.\n");
-             break;
-     }
-
-     return 0;
-
- }
+      return 0;
+  }
 </code></pre>
 <h2 id="looping">Looping</h2>
 <pre><code>  #include &lt;stdio.h&gt;
