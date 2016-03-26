@@ -21,17 +21,13 @@
   <link rel="stylesheet" href="./css/highlight.css">
 
   
-  <script>
-    // Current page data
-    var mkdocs_page_name = "None";
-    var mkdocs_page_input_path = "index.md";
-    var mkdocs_page_url = "/";
-  </script>
-  
   <script src="./js/jquery-2.1.1.min.js"></script>
   <script src="./js/modernizr-2.8.3.min.js"></script>
   <script type="text/javascript" src="./js/highlight.pack.js"></script>
-  <script src="./js/theme.js"></script> 
+  <script src="./js/theme.js"></script>
+  <script>var base_url = '.';</script>
+  <script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
+
 
   
 </head>
@@ -55,22 +51,8 @@
         <ul class="current">
           
             <li>
-    <li class="toctree-l1 current">
-        <a class="current" href=".">Home</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#welcome-to-c-alculator">Welcome to C-alculator</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#what-is-this-all-about">What is this all about?</a></li>
-                
-                    <li><a class="toctree-l4" href="#why">Why?</a></li>
-                
-                    <li><a class="toctree-l4" href="#what-do-you-need-to-get-started">What Do You Need to Get Started?</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href=".">Home</a>
         
     </li>
 <li>
@@ -158,9 +140,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href=".">Docs</a> &raquo;</li>
     
-      
     
-    <li>Home</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -170,25 +150,22 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="welcome-to-c-alculator">Welcome to C-alculator</h1>
-<h1 id="what-is-this-all-about">What is this all about?</h1>
-<p>But first let’s start from the very start. What exactly is programming? Is it the act of scheduling a television or radio program? Well yeah it is but not in the context we’re using it. Programming in general would be to provide specific instructions to a computer to do a certain task. These instructions usually take the form of an algorithm, a procedure to solve a problem or to carry out a specific task, in one of the many programming languages which are designed to communicate instructions to a machine. These may include writing an algorithm to make a robot move around in a circle, just like telling a dog to roll over.</p>
-<h2 id="why">Why?</h2>
-<p>Now, why would we learn C programming? Firstly, C has been there for a long time! The first C programming language was written in the early 1970s by Dennis Ritchie. C is a very low level language which means the source code we have written in C is very close to machine code which is the language the CPU understands.  It is a compiled language which is faster than higher level language while learning. As its name suggests, compared to low level languages it is further from machine code and closer to English language. Furthermore, C programming language has been the basis for a lot of other higher level programming languages like Java, PHP, JavaScript, Python, C++, Objective C and a lot more. Learning the basics of C and its syntax will also help beginners learn other C based languages much more efficiently.</p>
-<p>Well enough of this boring introduction, let’s start learning and have some fun!</p>
-<h2 id="what-do-you-need-to-get-started">What Do You Need to Get Started?</h2>
-<p>Never you worry, we'll guide you through all set-up and preparation in chapter 1!</p>
-              
+
+  <h1 id="search">Search Results</h1>
+
+  <form id="content_search" action="search.html">
+    <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+    <input name="q" id="mkdocs-search-query" type="text" class="search_input search-query ui-autocomplete-input" placeholder="Search the Docs" autocomplete="off" autofocus>
+  </form>
+
+  <div id="mkdocs-search-results">
+    Sorry, page not found.
+  </div>
+
+
             </div>
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="chapter1/" class="btn btn-neutral float-right" title="Chapter 1">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-    </div>
   
 
   <hr/>
@@ -213,15 +190,8 @@
       
       
       
-        <span style="margin-left: 15px"><a href="chapter1/" style="color: #fcfcfc">Next &raquo;</a></span>
-      
     </span>
 </div>
 
 </body>
 </html>
-
-<!--
-MkDocs version : 0.15.3
-Build Date UTC : 2016-03-26 00:22:17.683000
--->
